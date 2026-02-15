@@ -26,8 +26,8 @@ class FeatureBuilder:
             DataFrame with engineered features (numeric only, excluding merchant_id)
             
         Note:
-            Intentionally excludes dispute_count to prevent data leakage when
-            predicting high_dispute_risk (which is defined using dispute_count).
+            Intentionally excludes dispute_count to prevent data leakage.
+            Intentionally excludes volume_transaction_ratio (collinear with avg_transaction_size).
         """
         logger.info("Engineering features from merchant data")
         
@@ -38,9 +38,8 @@ class FeatureBuilder:
         features["log_monthly_volume"] = np.log1p(df["monthly_volume"])
         features["log_transaction_count"] = np.log1p(df["transaction_count"])
         
-        # Ticket size and volatility
+        # Ticket size (average revenue per transaction)
         features["avg_transaction_size"] = df["monthly_volume"] / (df["transaction_count"] + 1)
-        features["volume_transaction_ratio"] = df["monthly_volume"] / (df["transaction_count"] + 1)
         
         # Volume band (categorical -> ordinal)
         features["volume_band"] = pd.cut(

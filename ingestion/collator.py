@@ -85,19 +85,27 @@ class DataCollator:
                 "avg_ticket_size": api_data.get("transaction_summary", {}).get("avg_ticket_size"),
                 "internal_risk_flag": api_data.get("internal_risk_flag"),
                 "last_review_date": api_data.get("last_review_date"),
-                # From PDF
-                "pdf_summary": pdf_text[:500] if pdf_text else None,  # First 500 chars
+                # PDF text is processed and saved separately; do not include
+                # it in the collated CSV used for modelling to avoid
+                # any accidental leakage or influence on features.
+                # (pdf_text is still available in `pdf_summaries` and is
+                # written to `data/sample_merchant_summary.txt` by the
+                # PDF processor.)
                 # From Web Scraping
                 "claritypay_partner": is_partner,
             }
             
             try:
-                # Validate using Pydantic model
+                # Validate using Pydantic model. Remove pdf_summary from the
+                # validated output so it is not written to the collated CSV.
                 validated = MerchantCollated(**collated_record)
-                collated.append(validated.model_dump())
+                data_out = validated.model_dump()
+                data_out.pop("pdf_summary", None)
+                collated.append(data_out)
             except Exception as e:
                 logger.warning(f"Failed to validate collated record for {merchant_id}: {e}")
-                # Still include record but without validation
+                # Still include record but without validation; drop pdf_summary
+                collated_record.pop("pdf_summary", None)
                 collated.append(collated_record)
         
         logger.info(f"Collated {len(collated)} merchant records")
