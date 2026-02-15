@@ -1,0 +1,1868 @@
+2026-02-13 22:52:24,820 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-13 22:52:24,820 - ingestion.orchestrator - INFO - STARTING INGESTION PIPELINE
+2026-02-13 22:52:24,820 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-13 22:52:24,820 - ingestion.orchestrator - INFO - PHASE 1: Loading merchant CSV...
+2026-02-13 22:52:24,820 - ingestion.csv_loader - INFO - Loading merchants from data/merchants.csv
+2026-02-13 22:52:24,822 - ingestion.csv_loader - INFO - Loaded 50 valid merchants, 0 errors
+2026-02-13 22:52:24,822 - ingestion.orchestrator - INFO - ✓ Loaded 50 merchants from CSV
+2026-02-13 22:52:24,822 - ingestion.orchestrator - INFO - PHASE 2: Fetching data from external APIs...
+2026-02-13 22:52:24,822 - ingestion.orchestrator - INFO - Calling Simulated Risk API...
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M010
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M011
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M012
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M013
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M014
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M015
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M016
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M017
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M018
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M019
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M020
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M021
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M022
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M023
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M024
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M025
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M026
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M027
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M028
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M029
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M030
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M031
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M032
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M033
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M034
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M035
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M036
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M037
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M038
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M039
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M040
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M041
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M042
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M043
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M044
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M045
+2026-02-13 22:52:24,822 - ingestion.orchestrator - WARNING - ⚠ No API data for M046
+2026-02-13 22:52:24,823 - ingestion.orchestrator - WARNING - ⚠ No API data for M047
+2026-02-13 22:52:24,823 - ingestion.orchestrator - WARNING - ⚠ No API data for M048
+2026-02-13 22:52:24,823 - ingestion.orchestrator - WARNING - ⚠ No API data for M049
+2026-02-13 22:52:24,823 - ingestion.orchestrator - WARNING - ⚠ No API data for M050
+2026-02-13 22:52:24,823 - ingestion.orchestrator - INFO - ✓ Fetched API data for 9 merchants
+2026-02-13 22:52:24,823 - ingestion.orchestrator - INFO - Enriching with country data from REST Countries API...
+2026-02-13 22:52:35,481 - ingestion.orchestrator - INFO - ✓ Enriched 23 countries
+2026-02-13 22:52:35,481 - ingestion.orchestrator - INFO - ⊙ Companies House API key not configured; skipping UK company lookup
+2026-02-13 22:52:35,482 - ingestion.orchestrator - INFO - PHASE 3: Processing PDF asynchronously...
+2026-02-13 22:52:35,525 - ingestion.pdf_processor - INFO - Processing PDF: data/sample_merchant_summary.pdf
+2026-02-13 22:52:35,527 - ingestion.pdf_processor - INFO - Successfully extracted text from PDF (638 characters)
+2026-02-13 22:52:35,527 - ingestion.orchestrator - INFO - ✓ Processed PDF (638 chars)
+2026-02-13 22:52:35,528 - ingestion.orchestrator - INFO - PHASE 4: Scraping Claritypay website...
+2026-02-13 22:52:35,556 - ingestion.web_scraper - INFO - Scraping https://claritypay.com
+2026-02-13 22:52:38,347 - ingestion.web_scraper - INFO - Scraped Claritypay: 21 propositions, 0 partners
+2026-02-13 22:52:38,349 - ingestion.orchestrator - INFO - ✓ Scraped Claritypay: 5 propositions, 0 partners
+2026-02-13 22:52:38,349 - ingestion.orchestrator - INFO - PHASE 5: Collating data from all sources...
+2026-02-13 22:52:38,349 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-13 22:52:38,350 - ingestion.collator - INFO - Collated 50 merchant records
+2026-02-13 22:52:38,350 - ingestion.orchestrator - INFO - ✓ Collated 50 merchant records
+2026-02-13 22:52:38,350 - ingestion.collator - INFO - Saving collated data to data/collated_merchants.csv
+2026-02-13 22:52:38,354 - ingestion.collator - INFO - Saved 50 records to data/collated_merchants.csv
+2026-02-13 22:52:38,354 - ingestion.orchestrator - INFO - ✓ Saved collated data to data/collated_merchants.csv
+2026-02-13 22:52:38,354 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-13 22:52:38,354 - ingestion.orchestrator - INFO - INGESTION PIPELINE COMPLETE
+2026-02-13 22:52:38,354 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-13 22:52:38,354 - ingestion.orchestrator - INFO - 
+INGESTION SUMMARY:
+2026-02-13 22:52:38,354 - ingestion.orchestrator - INFO -   merchants_loaded: 50
+2026-02-13 22:52:38,354 - ingestion.orchestrator - INFO -   api_responses_fetched: 9
+2026-02-13 22:52:38,354 - ingestion.orchestrator - INFO -   countries_enriched: 23
+2026-02-13 22:52:38,354 - ingestion.orchestrator - INFO -   companies_fetched: 0
+2026-02-13 22:52:38,354 - ingestion.orchestrator - INFO -   pdfs_processed: 1
+2026-02-13 22:52:38,354 - ingestion.orchestrator - INFO -   web_data_scraped: True
+2026-02-13 22:53:14,676 - __main__ - INFO - 
+================================================================================
+2026-02-13 22:53:14,676 - __main__ - INFO - MERCHANT UNDERWRITING PIPELINE
+2026-02-13 22:53:14,676 - __main__ - INFO - ================================================================================
+2026-02-13 22:53:14,676 - __main__ - INFO - 
+[PHASE 1] Ingesting data from all sources...
+2026-02-13 22:53:14,676 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-13 22:53:14,676 - ingestion.orchestrator - INFO - STARTING INGESTION PIPELINE
+2026-02-13 22:53:14,676 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-13 22:53:14,676 - ingestion.orchestrator - INFO - PHASE 1: Loading merchant CSV...
+2026-02-13 22:53:14,676 - ingestion.csv_loader - INFO - Loading merchants from data/merchants.csv
+2026-02-13 22:53:14,681 - ingestion.csv_loader - INFO - Loaded 50 valid merchants, 0 errors
+2026-02-13 22:53:14,681 - ingestion.orchestrator - INFO - ✓ Loaded 50 merchants from CSV
+2026-02-13 22:53:14,681 - ingestion.orchestrator - INFO - PHASE 2: Fetching data from external APIs...
+2026-02-13 22:53:14,682 - ingestion.orchestrator - INFO - Calling Simulated Risk API...
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M010
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M011
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M012
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M013
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M014
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M015
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M016
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M017
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M018
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M019
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M020
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M021
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M022
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M023
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M024
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M025
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M026
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M027
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M028
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M029
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M030
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M031
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M032
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M033
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M034
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M035
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M036
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M037
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M038
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M039
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M040
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M041
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M042
+2026-02-13 22:53:14,682 - ingestion.orchestrator - WARNING - ⚠ No API data for M043
+2026-02-13 22:53:14,683 - ingestion.orchestrator - WARNING - ⚠ No API data for M044
+2026-02-13 22:53:14,683 - ingestion.orchestrator - WARNING - ⚠ No API data for M045
+2026-02-13 22:53:14,683 - ingestion.orchestrator - WARNING - ⚠ No API data for M046
+2026-02-13 22:53:14,683 - ingestion.orchestrator - WARNING - ⚠ No API data for M047
+2026-02-13 22:53:14,683 - ingestion.orchestrator - WARNING - ⚠ No API data for M048
+2026-02-13 22:53:14,683 - ingestion.orchestrator - WARNING - ⚠ No API data for M049
+2026-02-13 22:53:14,683 - ingestion.orchestrator - WARNING - ⚠ No API data for M050
+2026-02-13 22:53:14,683 - ingestion.orchestrator - INFO - ✓ Fetched API data for 9 merchants
+2026-02-13 22:53:14,683 - ingestion.orchestrator - INFO - Enriching with country data from REST Countries API...
+2026-02-13 22:53:24,599 - ingestion.orchestrator - INFO - ✓ Enriched 23 countries
+2026-02-13 22:53:24,600 - ingestion.orchestrator - INFO - ⊙ Companies House API key not configured; skipping UK company lookup
+2026-02-13 22:53:24,600 - ingestion.orchestrator - INFO - PHASE 3: Processing PDF asynchronously...
+2026-02-13 22:53:24,636 - ingestion.pdf_processor - INFO - Processing PDF: data/sample_merchant_summary.pdf
+2026-02-13 22:53:24,637 - ingestion.pdf_processor - INFO - Successfully extracted text from PDF (638 characters)
+2026-02-13 22:53:24,637 - ingestion.orchestrator - INFO - ✓ Processed PDF (638 chars)
+2026-02-13 22:53:24,638 - ingestion.orchestrator - INFO - PHASE 4: Scraping Claritypay website...
+2026-02-13 22:53:24,697 - ingestion.web_scraper - INFO - Scraping https://claritypay.com
+2026-02-13 22:53:25,909 - ingestion.web_scraper - INFO - Scraped Claritypay: 21 propositions, 0 partners
+2026-02-13 22:53:25,911 - ingestion.orchestrator - INFO - ✓ Scraped Claritypay: 5 propositions, 0 partners
+2026-02-13 22:53:25,911 - ingestion.orchestrator - INFO - PHASE 5: Collating data from all sources...
+2026-02-13 22:53:25,911 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-13 22:53:25,912 - ingestion.collator - INFO - Collated 50 merchant records
+2026-02-13 22:53:25,912 - ingestion.orchestrator - INFO - ✓ Collated 50 merchant records
+2026-02-13 22:53:25,912 - ingestion.collator - INFO - Saving collated data to data/collated_merchants.csv
+2026-02-13 22:53:25,916 - ingestion.collator - INFO - Saved 50 records to data/collated_merchants.csv
+2026-02-13 22:53:25,916 - ingestion.orchestrator - INFO - ✓ Saved collated data to data/collated_merchants.csv
+2026-02-13 22:53:25,916 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-13 22:53:25,916 - ingestion.orchestrator - INFO - INGESTION PIPELINE COMPLETE
+2026-02-13 22:53:25,916 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-13 22:53:25,916 - ingestion.orchestrator - INFO - 
+INGESTION SUMMARY:
+2026-02-13 22:53:25,916 - ingestion.orchestrator - INFO -   merchants_loaded: 50
+2026-02-13 22:53:25,916 - ingestion.orchestrator - INFO -   api_responses_fetched: 9
+2026-02-13 22:53:25,916 - ingestion.orchestrator - INFO -   countries_enriched: 23
+2026-02-13 22:53:25,916 - ingestion.orchestrator - INFO -   companies_fetched: 0
+2026-02-13 22:53:25,916 - ingestion.orchestrator - INFO -   pdfs_processed: 1
+2026-02-13 22:53:25,917 - ingestion.orchestrator - INFO -   web_data_scraped: True
+2026-02-13 22:53:25,917 - __main__ - INFO - 
+[PHASE 2] Engineering features for risk model...
+2026-02-13 22:53:25,921 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-13 22:53:25,924 - features.feature_builder - INFO - Engineered 7 features: ['dispute_rate', 'volume_band', 'avg_transaction_size', 'region_risk', 'company_status_risk', 'api_risk_score', 'volume_velocity']
+2026-02-13 22:53:25,924 - __main__ - INFO - ✓ Engineered 7 features
+2026-02-13 22:53:25,925 - __main__ - INFO - 
+[PHASE 3] Training risk classification model...
+2026-02-13 22:53:25,925 - model.model_trainer - INFO - Training risk classification model
+2026-02-13 22:53:25,927 - model.model_trainer - INFO - Train set: 40, Test set: 10
+2026-02-13 22:53:25,928 - model.model_trainer - INFO - Target distribution - Train: {0: 20, 1: 20}
+2026-02-13 22:54:51,749 - __main__ - INFO - 
+================================================================================
+2026-02-13 22:54:51,749 - __main__ - INFO - MERCHANT UNDERWRITING PIPELINE
+2026-02-13 22:54:51,749 - __main__ - INFO - ================================================================================
+2026-02-13 22:54:51,749 - __main__ - INFO - 
+[PHASE 1] Ingesting data from all sources...
+2026-02-13 22:54:51,749 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-13 22:54:51,749 - ingestion.orchestrator - INFO - STARTING INGESTION PIPELINE
+2026-02-13 22:54:51,749 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-13 22:54:51,749 - ingestion.orchestrator - INFO - PHASE 1: Loading merchant CSV...
+2026-02-13 22:54:51,749 - ingestion.csv_loader - INFO - Loading merchants from data/merchants.csv
+2026-02-13 22:54:51,752 - ingestion.csv_loader - INFO - Loaded 50 valid merchants, 0 errors
+2026-02-13 22:54:51,752 - ingestion.orchestrator - INFO - ✓ Loaded 50 merchants from CSV
+2026-02-13 22:54:51,752 - ingestion.orchestrator - INFO - PHASE 2: Fetching data from external APIs...
+2026-02-13 22:54:51,752 - ingestion.orchestrator - INFO - Calling Simulated Risk API...
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M010
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M011
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M012
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M013
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M014
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M015
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M016
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M017
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M018
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M019
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M020
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M021
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M022
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M023
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M024
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M025
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M026
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M027
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M028
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M029
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M030
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M031
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M032
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M033
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M034
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M035
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M036
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M037
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M038
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M039
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M040
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M041
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M042
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M043
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M044
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M045
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M046
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M047
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M048
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M049
+2026-02-13 22:54:51,752 - ingestion.orchestrator - WARNING - ⚠ No API data for M050
+2026-02-13 22:54:51,752 - ingestion.orchestrator - INFO - ✓ Fetched API data for 9 merchants
+2026-02-13 22:54:51,752 - ingestion.orchestrator - INFO - Enriching with country data from REST Countries API...
+2026-02-13 22:54:59,752 - ingestion.orchestrator - INFO - ✓ Enriched 23 countries
+2026-02-13 22:54:59,752 - ingestion.orchestrator - INFO - ⊙ Companies House API key not configured; skipping UK company lookup
+2026-02-13 22:54:59,752 - ingestion.orchestrator - INFO - PHASE 3: Processing PDF asynchronously...
+2026-02-13 22:54:59,796 - ingestion.pdf_processor - INFO - Processing PDF: data/sample_merchant_summary.pdf
+2026-02-13 22:54:59,798 - ingestion.pdf_processor - INFO - Successfully extracted text from PDF (638 characters)
+2026-02-13 22:54:59,798 - ingestion.orchestrator - INFO - ✓ Processed PDF (638 chars)
+2026-02-13 22:54:59,798 - ingestion.orchestrator - INFO - PHASE 4: Scraping Claritypay website...
+2026-02-13 22:54:59,842 - ingestion.web_scraper - INFO - Scraping https://claritypay.com
+2026-02-13 22:55:01,080 - ingestion.web_scraper - INFO - Scraped Claritypay: 21 propositions, 0 partners
+2026-02-13 22:55:01,083 - ingestion.orchestrator - INFO - ✓ Scraped Claritypay: 5 propositions, 0 partners
+2026-02-13 22:55:01,083 - ingestion.orchestrator - INFO - PHASE 5: Collating data from all sources...
+2026-02-13 22:55:01,083 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-13 22:55:01,084 - ingestion.collator - INFO - Collated 50 merchant records
+2026-02-13 22:55:01,084 - ingestion.orchestrator - INFO - ✓ Collated 50 merchant records
+2026-02-13 22:55:01,084 - ingestion.collator - INFO - Saving collated data to data/collated_merchants.csv
+2026-02-13 22:55:01,088 - ingestion.collator - INFO - Saved 50 records to data/collated_merchants.csv
+2026-02-13 22:55:01,088 - ingestion.orchestrator - INFO - ✓ Saved collated data to data/collated_merchants.csv
+2026-02-13 22:55:01,088 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-13 22:55:01,088 - ingestion.orchestrator - INFO - INGESTION PIPELINE COMPLETE
+2026-02-13 22:55:01,088 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-13 22:55:01,088 - ingestion.orchestrator - INFO - 
+INGESTION SUMMARY:
+2026-02-13 22:55:01,088 - ingestion.orchestrator - INFO -   merchants_loaded: 50
+2026-02-13 22:55:01,088 - ingestion.orchestrator - INFO -   api_responses_fetched: 9
+2026-02-13 22:55:01,088 - ingestion.orchestrator - INFO -   countries_enriched: 23
+2026-02-13 22:55:01,088 - ingestion.orchestrator - INFO -   companies_fetched: 0
+2026-02-13 22:55:01,088 - ingestion.orchestrator - INFO -   pdfs_processed: 1
+2026-02-13 22:55:01,088 - ingestion.orchestrator - INFO -   web_data_scraped: True
+2026-02-13 22:55:01,089 - __main__ - INFO - 
+[PHASE 2] Engineering features for risk model...
+2026-02-13 22:55:01,091 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-13 22:55:01,094 - features.feature_builder - INFO - Engineered 7 features: ['dispute_rate', 'volume_band', 'avg_transaction_size', 'region_risk', 'company_status_risk', 'api_risk_score', 'volume_velocity']
+2026-02-13 22:55:01,094 - __main__ - INFO - ✓ Engineered 7 features
+2026-02-13 22:55:01,094 - __main__ - INFO - 
+[PHASE 3] Training risk classification model...
+2026-02-13 22:55:01,095 - model.model_trainer - INFO - Training risk classification model
+2026-02-13 22:55:01,096 - model.model_trainer - INFO - Train set: 40, Test set: 10
+2026-02-13 22:55:01,097 - model.model_trainer - INFO - Target distribution - Train: {0: 20, 1: 20}
+2026-02-13 22:55:01,111 - model.model_trainer - INFO - Model AUC: 1.000
+2026-02-13 22:55:01,113 - model.model_trainer - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00         5
+           1       1.00      1.00      1.00         5
+
+    accuracy                           1.00        10
+   macro avg       1.00      1.00      1.00        10
+weighted avg       1.00      1.00      1.00        10
+
+2026-02-13 22:55:01,113 - __main__ - INFO - ✓ Model trained (AUC: 1.000)
+2026-02-13 22:55:01,113 - __main__ - INFO -   Train size: 40, Test size: 10
+2026-02-13 22:55:01,113 - __main__ - INFO - 
+[PHASE 4] Generating risk predictions...
+2026-02-13 22:55:01,114 - __main__ - INFO - ✓ Generated predictions for 50 merchants
+2026-02-13 22:55:01,114 - __main__ - INFO - 
+[PHASE 5] Aggregating portfolio-level risk...
+2026-02-13 22:55:01,114 - model.portfolio - INFO - Aggregating portfolio-level risk metrics
+2026-02-13 22:55:01,114 - model.portfolio - INFO - Portfolio metrics: 25/50 high-risk merchants
+2026-02-13 22:55:01,114 - model.portfolio - INFO - Expected loss: 1864933.18, Risk distribution: {'low': np.int64(23), 'medium': np.int64(4), 'high': np.int64(23)}
+2026-02-13 22:55:01,115 - __main__ - INFO - ✓ Portfolio summary:
+2026-02-13 22:55:01,115 - __main__ - INFO -   Total merchants: 50
+2026-02-13 22:55:01,115 - __main__ - INFO -   High-risk count: 25
+2026-02-13 22:55:01,115 - __main__ - INFO -   Expected loss: 1864933.18
+2026-02-13 22:55:01,115 - __main__ - INFO - 
+[PHASE 6] Generating LLM-powered underwriting report...
+2026-02-13 22:55:01,115 - reporting.llm_reporter - WARNING - LLM client not initialized; generating template report
+2026-02-13 22:55:01,115 - __main__ - INFO - ✓ Report generated successfully
+2026-02-13 22:55:01,115 - __main__ - INFO -   Saved to data/underwriting_report.txt
+2026-02-13 22:55:01,115 - model.model_trainer - INFO - Saving model to model/risk_model.pkl
+2026-02-13 22:55:01,115 - __main__ - INFO - ✓ Model saved to model/risk_model.pkl
+2026-02-13 22:55:01,116 - __main__ - INFO - ✓ Saved collated data with predictions
+2026-02-13 22:55:01,116 - __main__ - INFO - 
+================================================================================
+2026-02-13 22:55:01,116 - __main__ - INFO - PIPELINE EXECUTION COMPLETE
+2026-02-13 22:55:01,116 - __main__ - INFO - ================================================================================
+2026-02-13 22:55:14,288 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-13 22:55:14,288 - ingestion.collator - INFO - Collated 2 merchant records
+2026-02-13 22:55:14,288 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-13 22:55:14,288 - ingestion.collator - INFO - Collated 2 merchant records
+2026-02-13 22:55:14,289 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-13 22:55:14,289 - ingestion.collator - INFO - Collated 2 merchant records
+2026-02-13 22:55:14,289 - ingestion.csv_loader - INFO - Loading merchants from /Users/aadityagoel/Documents/Code/MLE-Hiring/data/merchants.csv
+2026-02-13 22:55:14,293 - ingestion.csv_loader - INFO - Loaded 50 valid merchants, 0 errors
+2026-02-13 22:55:14,297 - ingestion.csv_loader - INFO - Loading merchants from /private/var/folders/cc/4f1bjk3x1cv56k7sdv9bm3th0000gn/T/pytest-of-aadityagoel/pytest-0/test_csv_with_valid_and_invali0/test.csv
+2026-02-13 22:55:14,297 - ingestion.csv_loader - WARNING - Validation error: Row 0: 1 validation error for MerchantCSV
+registration_number
+  Input should be a valid string [type=string_type, input_value=12345678.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-13 22:55:14,298 - ingestion.csv_loader - WARNING - Validation error: Row 1: 3 validation errors for MerchantCSV
+merchant_id
+  Value error, merchant_id must start with 'M' [type=value_error, input_value='INVALID', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+registration_number
+  Input should be a valid string [type=string_type, input_value=12345678.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+monthly_volume
+  Input should be greater than or equal to 0 [type=greater_than_equal, input_value=-100, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/greater_than_equal
+2026-02-13 22:55:14,298 - ingestion.csv_loader - INFO - Loaded 1 valid merchants, 2 errors
+2026-02-13 22:55:14,316 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-13 22:55:14,399 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-13 22:55:14,471 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-13 22:55:14,540 - tests.test_integration - INFO - Starting integration test...
+2026-02-13 22:55:14,541 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-13 22:55:14,541 - ingestion.orchestrator - INFO - STARTING INGESTION PIPELINE
+2026-02-13 22:55:14,541 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-13 22:55:14,541 - ingestion.orchestrator - INFO - PHASE 1: Loading merchant CSV...
+2026-02-13 22:55:14,541 - ingestion.csv_loader - INFO - Loading merchants from /Users/aadityagoel/Documents/Code/MLE-Hiring/data/merchants.csv
+2026-02-13 22:55:14,542 - ingestion.csv_loader - INFO - Loaded 50 valid merchants, 0 errors
+2026-02-13 22:55:14,542 - ingestion.orchestrator - INFO - ✓ Loaded 50 merchants from CSV
+2026-02-13 22:55:14,542 - ingestion.orchestrator - INFO - PHASE 2: Fetching data from external APIs...
+2026-02-13 22:55:14,542 - ingestion.orchestrator - INFO - Calling Simulated Risk API...
+2026-02-13 22:55:14,542 - ingestion.orchestrator - WARNING - ⚠ No API data for M010
+2026-02-13 22:55:14,542 - ingestion.orchestrator - WARNING - ⚠ No API data for M011
+2026-02-13 22:55:14,542 - ingestion.orchestrator - WARNING - ⚠ No API data for M012
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M013
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M014
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M015
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M016
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M017
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M018
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M019
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M020
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M021
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M022
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M023
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M024
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M025
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M026
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M027
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M028
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M029
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M030
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M031
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M032
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M033
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M034
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M035
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M036
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M037
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M038
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M039
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M040
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M041
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M042
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M043
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M044
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M045
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M046
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M047
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M048
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M049
+2026-02-13 22:55:14,543 - ingestion.orchestrator - WARNING - ⚠ No API data for M050
+2026-02-13 22:55:14,543 - ingestion.orchestrator - INFO - ✓ Fetched API data for 9 merchants
+2026-02-13 22:55:14,543 - ingestion.orchestrator - INFO - Enriching with country data from REST Countries API...
+2026-02-13 22:55:22,045 - ingestion.orchestrator - INFO - ✓ Enriched 23 countries
+2026-02-13 22:55:22,046 - ingestion.orchestrator - INFO - ⊙ Companies House API key not configured; skipping UK company lookup
+2026-02-13 22:55:22,046 - ingestion.orchestrator - INFO - PHASE 3: Processing PDF asynchronously...
+2026-02-13 22:55:22,080 - ingestion.pdf_processor - INFO - Processing PDF: /Users/aadityagoel/Documents/Code/MLE-Hiring/data/sample_merchant_summary.pdf
+2026-02-13 22:55:22,081 - ingestion.pdf_processor - INFO - Successfully extracted text from PDF (638 characters)
+2026-02-13 22:55:22,082 - ingestion.orchestrator - INFO - ✓ Processed PDF (638 chars)
+2026-02-13 22:55:22,082 - ingestion.orchestrator - INFO - PHASE 4: Scraping Claritypay website...
+2026-02-13 22:55:22,113 - ingestion.web_scraper - INFO - Scraping https://claritypay.com
+2026-02-13 22:55:24,021 - ingestion.web_scraper - INFO - Scraped Claritypay: 21 propositions, 0 partners
+2026-02-13 22:55:24,023 - ingestion.orchestrator - INFO - ✓ Scraped Claritypay: 5 propositions, 0 partners
+2026-02-13 22:55:24,023 - ingestion.orchestrator - INFO - PHASE 5: Collating data from all sources...
+2026-02-13 22:55:24,023 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-13 22:55:24,023 - ingestion.collator - INFO - Collated 50 merchant records
+2026-02-13 22:55:24,023 - ingestion.orchestrator - INFO - ✓ Collated 50 merchant records
+2026-02-13 22:55:24,024 - ingestion.collator - INFO - Saving collated data to data/collated_merchants.csv
+2026-02-13 22:55:24,027 - ingestion.collator - INFO - Saved 50 records to data/collated_merchants.csv
+2026-02-13 22:55:24,027 - ingestion.orchestrator - INFO - ✓ Saved collated data to data/collated_merchants.csv
+2026-02-13 22:55:24,028 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-13 22:55:24,028 - ingestion.orchestrator - INFO - INGESTION PIPELINE COMPLETE
+2026-02-13 22:55:24,028 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-13 22:55:24,028 - ingestion.orchestrator - INFO - 
+INGESTION SUMMARY:
+2026-02-13 22:55:24,028 - ingestion.orchestrator - INFO -   merchants_loaded: 50
+2026-02-13 22:55:24,028 - ingestion.orchestrator - INFO -   api_responses_fetched: 9
+2026-02-13 22:55:24,028 - ingestion.orchestrator - INFO -   countries_enriched: 23
+2026-02-13 22:55:24,028 - ingestion.orchestrator - INFO -   companies_fetched: 0
+2026-02-13 22:55:24,028 - ingestion.orchestrator - INFO -   pdfs_processed: 1
+2026-02-13 22:55:24,028 - ingestion.orchestrator - INFO -   web_data_scraped: True
+2026-02-13 22:55:24,028 - tests.test_integration - INFO - 
+✓ Ingestion successful! Collated 50 merchants
+2026-02-13 22:55:24,029 - tests.test_integration - INFO - 
+Sample collated record:
+2026-02-13 22:55:24,029 - tests.test_integration - INFO -   merchant_id: M001
+2026-02-13 22:55:24,029 - tests.test_integration - INFO -   name: GreenLeaf Retail Ltd
+2026-02-13 22:55:24,029 - tests.test_integration - INFO -   country: United Kingdom
+2026-02-13 22:55:24,029 - tests.test_integration - INFO -   country_code: GB
+2026-02-13 22:55:24,029 - tests.test_integration - INFO -   region: Europe
+2026-02-13 22:55:24,029 - tests.test_integration - INFO -   subregion: Northern Europe
+2026-02-13 22:55:24,029 - tests.test_integration - INFO -   registration_number: 09446239
+2026-02-13 22:55:24,029 - tests.test_integration - INFO -   company_status: None
+2026-02-13 22:55:24,029 - tests.test_integration - INFO -   company_incorporation_date: None
+2026-02-13 22:55:24,029 - tests.test_integration - INFO -   monthly_volume: 125000.0
+2026-02-13 22:55:24,031 - ingestion.csv_loader - INFO - Loading merchants from /Users/aadityagoel/Documents/Code/MLE-Hiring/data/merchants.csv
+2026-02-13 22:55:24,034 - ingestion.csv_loader - INFO - Loaded 50 valid merchants, 0 errors
+2026-02-13 22:55:24,034 - ingestion.orchestrator - INFO - ✓ Loaded 50 merchants from CSV
+2026-02-13 22:57:03,386 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-13 22:57:03,386 - ingestion.collator - INFO - Collated 2 merchant records
+2026-02-13 22:57:03,386 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-13 22:57:03,387 - ingestion.collator - INFO - Collated 2 merchant records
+2026-02-13 22:57:03,387 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-13 22:57:03,387 - ingestion.collator - INFO - Collated 2 merchant records
+2026-02-13 22:57:03,387 - ingestion.csv_loader - INFO - Loading merchants from /Users/aadityagoel/Documents/Code/MLE-Hiring/data/merchants.csv
+2026-02-13 22:57:03,391 - ingestion.csv_loader - INFO - Loaded 50 valid merchants, 0 errors
+2026-02-13 22:57:03,395 - ingestion.csv_loader - INFO - Loading merchants from /private/var/folders/cc/4f1bjk3x1cv56k7sdv9bm3th0000gn/T/pytest-of-aadityagoel/pytest-1/test_csv_with_valid_and_invali0/test.csv
+2026-02-13 22:57:03,396 - ingestion.csv_loader - WARNING - Validation error: Row 0: 1 validation error for MerchantCSV
+registration_number
+  Input should be a valid string [type=string_type, input_value=12345678.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-02-13 22:57:03,396 - ingestion.csv_loader - WARNING - Validation error: Row 1: 3 validation errors for MerchantCSV
+merchant_id
+  Value error, merchant_id must start with 'M' [type=value_error, input_value='INVALID', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+registration_number
+  Input should be a valid string [type=string_type, input_value=12345678.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+monthly_volume
+  Input should be greater than or equal to 0 [type=greater_than_equal, input_value=-100, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/greater_than_equal
+2026-02-13 22:57:03,396 - ingestion.csv_loader - INFO - Loaded 1 valid merchants, 2 errors
+2026-02-13 22:57:03,413 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-13 22:57:03,417 - features.feature_builder - INFO - Engineered 7 features: ['dispute_rate', 'volume_band', 'avg_transaction_size', 'region_risk', 'company_status_risk', 'api_risk_score', 'volume_velocity']
+2026-02-13 22:57:03,418 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-13 22:57:03,419 - features.feature_builder - INFO - Engineered 7 features: ['dispute_rate', 'volume_band', 'avg_transaction_size', 'region_risk', 'company_status_risk', 'api_risk_score', 'volume_velocity']
+2026-02-13 22:57:03,419 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-13 22:57:03,420 - features.feature_builder - INFO - Engineered 7 features: ['dispute_rate', 'volume_band', 'avg_transaction_size', 'region_risk', 'company_status_risk', 'api_risk_score', 'volume_velocity']
+2026-02-13 22:57:03,421 - tests.test_integration - INFO - Starting integration test...
+2026-02-13 22:57:03,421 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-13 22:57:03,421 - ingestion.orchestrator - INFO - STARTING INGESTION PIPELINE
+2026-02-13 22:57:03,421 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-13 22:57:03,421 - ingestion.orchestrator - INFO - PHASE 1: Loading merchant CSV...
+2026-02-13 22:57:03,421 - ingestion.csv_loader - INFO - Loading merchants from /Users/aadityagoel/Documents/Code/MLE-Hiring/data/merchants.csv
+2026-02-13 22:57:03,422 - ingestion.csv_loader - INFO - Loaded 50 valid merchants, 0 errors
+2026-02-13 22:57:03,422 - ingestion.orchestrator - INFO - ✓ Loaded 50 merchants from CSV
+2026-02-13 22:57:03,422 - ingestion.orchestrator - INFO - PHASE 2: Fetching data from external APIs...
+2026-02-13 22:57:03,422 - ingestion.orchestrator - INFO - Calling Simulated Risk API...
+2026-02-13 22:57:03,422 - ingestion.orchestrator - WARNING - ⚠ No API data for M010
+2026-02-13 22:57:03,422 - ingestion.orchestrator - WARNING - ⚠ No API data for M011
+2026-02-13 22:57:03,422 - ingestion.orchestrator - WARNING - ⚠ No API data for M012
+2026-02-13 22:57:03,422 - ingestion.orchestrator - WARNING - ⚠ No API data for M013
+2026-02-13 22:57:03,422 - ingestion.orchestrator - WARNING - ⚠ No API data for M014
+2026-02-13 22:57:03,422 - ingestion.orchestrator - WARNING - ⚠ No API data for M015
+2026-02-13 22:57:03,422 - ingestion.orchestrator - WARNING - ⚠ No API data for M016
+2026-02-13 22:57:03,422 - ingestion.orchestrator - WARNING - ⚠ No API data for M017
+2026-02-13 22:57:03,422 - ingestion.orchestrator - WARNING - ⚠ No API data for M018
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M019
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M020
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M021
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M022
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M023
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M024
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M025
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M026
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M027
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M028
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M029
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M030
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M031
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M032
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M033
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M034
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M035
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M036
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M037
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M038
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M039
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M040
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M041
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M042
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M043
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M044
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M045
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M046
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M047
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M048
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M049
+2026-02-13 22:57:03,423 - ingestion.orchestrator - WARNING - ⚠ No API data for M050
+2026-02-13 22:57:03,423 - ingestion.orchestrator - INFO - ✓ Fetched API data for 9 merchants
+2026-02-13 22:57:03,423 - ingestion.orchestrator - INFO - Enriching with country data from REST Countries API...
+2026-02-13 22:57:09,995 - ingestion.orchestrator - INFO - ✓ Enriched 23 countries
+2026-02-13 22:57:09,996 - ingestion.orchestrator - INFO - ⊙ Companies House API key not configured; skipping UK company lookup
+2026-02-13 22:57:09,996 - ingestion.orchestrator - INFO - PHASE 3: Processing PDF asynchronously...
+2026-02-13 22:57:10,024 - ingestion.pdf_processor - INFO - Processing PDF: /Users/aadityagoel/Documents/Code/MLE-Hiring/data/sample_merchant_summary.pdf
+2026-02-13 22:57:10,025 - ingestion.pdf_processor - INFO - Successfully extracted text from PDF (638 characters)
+2026-02-13 22:57:10,025 - ingestion.orchestrator - INFO - ✓ Processed PDF (638 chars)
+2026-02-13 22:57:10,025 - ingestion.orchestrator - INFO - PHASE 4: Scraping Claritypay website...
+2026-02-13 22:57:10,051 - ingestion.web_scraper - INFO - Scraping https://claritypay.com
+2026-02-13 22:57:10,955 - ingestion.web_scraper - INFO - Scraped Claritypay: 21 propositions, 0 partners
+2026-02-13 22:57:10,956 - ingestion.orchestrator - INFO - ✓ Scraped Claritypay: 5 propositions, 0 partners
+2026-02-13 22:57:10,956 - ingestion.orchestrator - INFO - PHASE 5: Collating data from all sources...
+2026-02-13 22:57:10,956 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-13 22:57:10,957 - ingestion.collator - INFO - Collated 50 merchant records
+2026-02-13 22:57:10,957 - ingestion.orchestrator - INFO - ✓ Collated 50 merchant records
+2026-02-13 22:57:10,957 - ingestion.collator - INFO - Saving collated data to data/collated_merchants.csv
+2026-02-13 22:57:10,960 - ingestion.collator - INFO - Saved 50 records to data/collated_merchants.csv
+2026-02-13 22:57:10,960 - ingestion.orchestrator - INFO - ✓ Saved collated data to data/collated_merchants.csv
+2026-02-13 22:57:10,960 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-13 22:57:10,960 - ingestion.orchestrator - INFO - INGESTION PIPELINE COMPLETE
+2026-02-13 22:57:10,960 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-13 22:57:10,960 - ingestion.orchestrator - INFO - 
+INGESTION SUMMARY:
+2026-02-13 22:57:10,960 - ingestion.orchestrator - INFO -   merchants_loaded: 50
+2026-02-13 22:57:10,960 - ingestion.orchestrator - INFO -   api_responses_fetched: 9
+2026-02-13 22:57:10,960 - ingestion.orchestrator - INFO -   countries_enriched: 23
+2026-02-13 22:57:10,960 - ingestion.orchestrator - INFO -   companies_fetched: 0
+2026-02-13 22:57:10,960 - ingestion.orchestrator - INFO -   pdfs_processed: 1
+2026-02-13 22:57:10,960 - ingestion.orchestrator - INFO -   web_data_scraped: True
+2026-02-13 22:57:10,961 - tests.test_integration - INFO - 
+✓ Ingestion successful! Collated 50 merchants
+2026-02-13 22:57:10,961 - tests.test_integration - INFO - 
+Sample collated record:
+2026-02-13 22:57:10,961 - tests.test_integration - INFO -   merchant_id: M001
+2026-02-13 22:57:10,961 - tests.test_integration - INFO -   name: GreenLeaf Retail Ltd
+2026-02-13 22:57:10,961 - tests.test_integration - INFO -   country: United Kingdom
+2026-02-13 22:57:10,961 - tests.test_integration - INFO -   country_code: GB
+2026-02-13 22:57:10,961 - tests.test_integration - INFO -   region: Europe
+2026-02-13 22:57:10,961 - tests.test_integration - INFO -   subregion: Northern Europe
+2026-02-13 22:57:10,961 - tests.test_integration - INFO -   registration_number: 09446239
+2026-02-13 22:57:10,961 - tests.test_integration - INFO -   company_status: None
+2026-02-13 22:57:10,961 - tests.test_integration - INFO -   company_incorporation_date: None
+2026-02-13 22:57:10,961 - tests.test_integration - INFO -   monthly_volume: 125000.0
+2026-02-13 22:57:10,964 - ingestion.csv_loader - INFO - Loading merchants from /Users/aadityagoel/Documents/Code/MLE-Hiring/data/merchants.csv
+2026-02-13 22:57:10,966 - ingestion.csv_loader - INFO - Loaded 50 valid merchants, 0 errors
+2026-02-13 22:57:10,966 - ingestion.orchestrator - INFO - ✓ Loaded 50 merchants from CSV
+2026-02-13 22:59:49,360 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-13 22:59:49,361 - ingestion.collator - INFO - Collated 2 merchant records
+2026-02-13 22:59:49,361 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-13 22:59:49,361 - ingestion.collator - INFO - Collated 2 merchant records
+2026-02-13 22:59:49,362 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-13 22:59:49,362 - ingestion.collator - INFO - Collated 2 merchant records
+2026-02-13 22:59:49,362 - ingestion.csv_loader - INFO - Loading merchants from /Users/aadityagoel/Documents/Code/MLE-Hiring/data/merchants.csv
+2026-02-13 22:59:49,365 - ingestion.csv_loader - INFO - Loaded 50 valid merchants, 0 errors
+2026-02-13 22:59:49,368 - ingestion.csv_loader - INFO - Loading merchants from /private/var/folders/cc/4f1bjk3x1cv56k7sdv9bm3th0000gn/T/pytest-of-aadityagoel/pytest-2/test_csv_with_valid_and_invali0/test.csv
+2026-02-13 22:59:49,369 - ingestion.csv_loader - WARNING - Validation error: Row 1: 2 validation errors for MerchantCSV
+merchant_id
+  Value error, merchant_id must start with 'M' [type=value_error, input_value='INVALID', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+monthly_volume
+  Input should be greater than or equal to 0 [type=greater_than_equal, input_value=-100, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/greater_than_equal
+2026-02-13 22:59:49,369 - ingestion.csv_loader - INFO - Loaded 2 valid merchants, 1 errors
+2026-02-13 22:59:49,370 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-13 22:59:49,374 - features.feature_builder - INFO - Engineered 7 features: ['dispute_rate', 'volume_band', 'avg_transaction_size', 'region_risk', 'company_status_risk', 'api_risk_score', 'volume_velocity']
+2026-02-13 22:59:49,374 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-13 22:59:49,375 - features.feature_builder - INFO - Engineered 7 features: ['dispute_rate', 'volume_band', 'avg_transaction_size', 'region_risk', 'company_status_risk', 'api_risk_score', 'volume_velocity']
+2026-02-13 22:59:49,375 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-13 22:59:49,376 - features.feature_builder - INFO - Engineered 7 features: ['dispute_rate', 'volume_band', 'avg_transaction_size', 'region_risk', 'company_status_risk', 'api_risk_score', 'volume_velocity']
+2026-02-13 22:59:49,377 - tests.test_integration - INFO - Starting integration test...
+2026-02-13 22:59:49,377 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-13 22:59:49,377 - ingestion.orchestrator - INFO - STARTING INGESTION PIPELINE
+2026-02-13 22:59:49,378 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-13 22:59:49,378 - ingestion.orchestrator - INFO - PHASE 1: Loading merchant CSV...
+2026-02-13 22:59:49,378 - ingestion.csv_loader - INFO - Loading merchants from /Users/aadityagoel/Documents/Code/MLE-Hiring/data/merchants.csv
+2026-02-13 22:59:49,379 - ingestion.csv_loader - INFO - Loaded 50 valid merchants, 0 errors
+2026-02-13 22:59:49,379 - ingestion.orchestrator - INFO - ✓ Loaded 50 merchants from CSV
+2026-02-13 22:59:49,379 - ingestion.orchestrator - INFO - PHASE 2: Fetching data from external APIs...
+2026-02-13 22:59:49,379 - ingestion.orchestrator - INFO - Calling Simulated Risk API...
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M010
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M011
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M012
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M013
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M014
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M015
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M016
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M017
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M018
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M019
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M020
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M021
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M022
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M023
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M024
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M025
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M026
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M027
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M028
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M029
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M030
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M031
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M032
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M033
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M034
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M035
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M036
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M037
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M038
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M039
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M040
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M041
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M042
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M043
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M044
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M045
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M046
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M047
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M048
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M049
+2026-02-13 22:59:49,379 - ingestion.orchestrator - WARNING - ⚠ No API data for M050
+2026-02-13 22:59:49,379 - ingestion.orchestrator - INFO - ✓ Fetched API data for 9 merchants
+2026-02-13 22:59:49,379 - ingestion.orchestrator - INFO - Enriching with country data from REST Countries API...
+2026-02-13 23:00:04,670 - ingestion.orchestrator - INFO - ✓ Enriched 23 countries
+2026-02-13 23:00:04,671 - ingestion.orchestrator - INFO - ⊙ Companies House API key not configured; skipping UK company lookup
+2026-02-13 23:00:04,671 - ingestion.orchestrator - INFO - PHASE 3: Processing PDF asynchronously...
+2026-02-13 23:00:04,709 - ingestion.pdf_processor - INFO - Processing PDF: /Users/aadityagoel/Documents/Code/MLE-Hiring/data/sample_merchant_summary.pdf
+2026-02-13 23:00:04,710 - ingestion.pdf_processor - INFO - Successfully extracted text from PDF (638 characters)
+2026-02-13 23:00:04,710 - ingestion.orchestrator - INFO - ✓ Processed PDF (638 chars)
+2026-02-13 23:00:04,711 - ingestion.orchestrator - INFO - PHASE 4: Scraping Claritypay website...
+2026-02-13 23:00:04,746 - ingestion.web_scraper - INFO - Scraping https://claritypay.com
+2026-02-13 23:00:05,683 - ingestion.web_scraper - INFO - Scraped Claritypay: 21 propositions, 0 partners
+2026-02-13 23:00:05,686 - ingestion.orchestrator - INFO - ✓ Scraped Claritypay: 5 propositions, 0 partners
+2026-02-13 23:00:05,686 - ingestion.orchestrator - INFO - PHASE 5: Collating data from all sources...
+2026-02-13 23:00:05,686 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-13 23:00:05,686 - ingestion.collator - INFO - Collated 50 merchant records
+2026-02-13 23:00:05,686 - ingestion.orchestrator - INFO - ✓ Collated 50 merchant records
+2026-02-13 23:00:05,686 - ingestion.collator - INFO - Saving collated data to data/collated_merchants.csv
+2026-02-13 23:00:05,690 - ingestion.collator - INFO - Saved 50 records to data/collated_merchants.csv
+2026-02-13 23:00:05,690 - ingestion.orchestrator - INFO - ✓ Saved collated data to data/collated_merchants.csv
+2026-02-13 23:00:05,690 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-13 23:00:05,690 - ingestion.orchestrator - INFO - INGESTION PIPELINE COMPLETE
+2026-02-13 23:00:05,690 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-13 23:00:05,690 - ingestion.orchestrator - INFO - 
+INGESTION SUMMARY:
+2026-02-13 23:00:05,690 - ingestion.orchestrator - INFO -   merchants_loaded: 50
+2026-02-13 23:00:05,690 - ingestion.orchestrator - INFO -   api_responses_fetched: 9
+2026-02-13 23:00:05,690 - ingestion.orchestrator - INFO -   countries_enriched: 23
+2026-02-13 23:00:05,690 - ingestion.orchestrator - INFO -   companies_fetched: 0
+2026-02-13 23:00:05,690 - ingestion.orchestrator - INFO -   pdfs_processed: 1
+2026-02-13 23:00:05,690 - ingestion.orchestrator - INFO -   web_data_scraped: True
+2026-02-13 23:00:05,691 - tests.test_integration - INFO - 
+✓ Ingestion successful! Collated 50 merchants
+2026-02-13 23:00:05,691 - tests.test_integration - INFO - 
+Sample collated record:
+2026-02-13 23:00:05,691 - tests.test_integration - INFO -   merchant_id: M001
+2026-02-13 23:00:05,691 - tests.test_integration - INFO -   name: GreenLeaf Retail Ltd
+2026-02-13 23:00:05,691 - tests.test_integration - INFO -   country: United Kingdom
+2026-02-13 23:00:05,691 - tests.test_integration - INFO -   country_code: GB
+2026-02-13 23:00:05,691 - tests.test_integration - INFO -   region: Europe
+2026-02-13 23:00:05,691 - tests.test_integration - INFO -   subregion: Northern Europe
+2026-02-13 23:00:05,691 - tests.test_integration - INFO -   registration_number: 09446239
+2026-02-13 23:00:05,691 - tests.test_integration - INFO -   company_status: None
+2026-02-13 23:00:05,691 - tests.test_integration - INFO -   company_incorporation_date: None
+2026-02-13 23:00:05,691 - tests.test_integration - INFO -   monthly_volume: 125000.0
+2026-02-13 23:00:05,694 - ingestion.csv_loader - INFO - Loading merchants from /Users/aadityagoel/Documents/Code/MLE-Hiring/data/merchants.csv
+2026-02-13 23:00:05,696 - ingestion.csv_loader - INFO - Loaded 50 valid merchants, 0 errors
+2026-02-13 23:00:05,696 - ingestion.orchestrator - INFO - ✓ Loaded 50 merchants from CSV
+2026-02-14 22:11:48,054 - __main__ - INFO - 
+================================================================================
+2026-02-14 22:11:48,054 - __main__ - INFO - MERCHANT UNDERWRITING PIPELINE
+2026-02-14 22:11:48,054 - __main__ - INFO - ================================================================================
+2026-02-14 22:11:48,054 - __main__ - INFO - 
+[PHASE 1] Ingesting data from all sources...
+2026-02-14 22:11:48,054 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 22:11:48,054 - ingestion.orchestrator - INFO - STARTING INGESTION PIPELINE
+2026-02-14 22:11:48,054 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 22:11:48,054 - ingestion.orchestrator - INFO - PHASE 1: Loading merchant CSV...
+2026-02-14 22:11:48,054 - ingestion.csv_loader - INFO - Loading merchants from data/merchants.csv
+2026-02-14 22:11:48,059 - ingestion.csv_loader - INFO - Loaded 50 valid merchants, 0 errors
+2026-02-14 22:11:48,059 - ingestion.orchestrator - INFO - ✓ Loaded 50 merchants from CSV
+2026-02-14 22:11:48,059 - ingestion.orchestrator - INFO - PHASE 2: Fetching data from external APIs...
+2026-02-14 22:11:48,059 - ingestion.orchestrator - INFO - Calling Simulated Risk API...
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M010
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M011
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M012
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M013
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M014
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M015
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M016
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M017
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M018
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M019
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M020
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M021
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M022
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M023
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M024
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M025
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M026
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M027
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M028
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M029
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M030
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M031
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M032
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M033
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M034
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M035
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M036
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M037
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M038
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M039
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M040
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M041
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M042
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M043
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M044
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M045
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M046
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M047
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M048
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M049
+2026-02-14 22:11:48,059 - ingestion.orchestrator - WARNING - ⚠ No API data for M050
+2026-02-14 22:11:48,059 - ingestion.orchestrator - INFO - ✓ Fetched API data for 9 merchants
+2026-02-14 22:11:48,059 - ingestion.orchestrator - INFO - Enriching with country data from REST Countries API...
+2026-02-14 22:11:54,210 - ingestion.orchestrator - INFO - ✓ Enriched 23 countries
+2026-02-14 22:11:54,210 - ingestion.orchestrator - INFO - ⊙ Companies House API key not configured; skipping UK company lookup
+2026-02-14 22:11:54,210 - ingestion.orchestrator - INFO - PHASE 3: Processing PDF asynchronously...
+2026-02-14 22:11:54,236 - ingestion.pdf_processor - INFO - Processing PDF: data/sample_merchant_summary.pdf
+2026-02-14 22:11:54,237 - ingestion.pdf_processor - INFO - Successfully extracted text from PDF (638 characters)
+2026-02-14 22:11:54,237 - ingestion.orchestrator - INFO - ✓ Processed PDF (638 chars)
+2026-02-14 22:11:54,237 - ingestion.orchestrator - INFO - PHASE 4: Scraping Claritypay website...
+2026-02-14 22:11:54,284 - ingestion.web_scraper - INFO - Scraping https://claritypay.com
+2026-02-14 22:11:58,062 - ingestion.web_scraper - INFO - Scraped Claritypay: 21 propositions, 0 partners
+2026-02-14 22:11:58,064 - ingestion.orchestrator - INFO - ✓ Scraped Claritypay: 5 propositions, 0 partners
+2026-02-14 22:11:58,064 - ingestion.orchestrator - INFO - PHASE 5: Collating data from all sources...
+2026-02-14 22:11:58,064 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-14 22:11:58,065 - ingestion.collator - INFO - Collated 50 merchant records
+2026-02-14 22:11:58,065 - ingestion.orchestrator - INFO - ✓ Collated 50 merchant records
+2026-02-14 22:11:58,065 - ingestion.collator - INFO - Saving collated data to data/collated_merchants.csv
+2026-02-14 22:11:58,071 - ingestion.collator - INFO - Saved 50 records to data/collated_merchants.csv
+2026-02-14 22:11:58,071 - ingestion.orchestrator - INFO - ✓ Saved collated data to data/collated_merchants.csv
+2026-02-14 22:11:58,071 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 22:11:58,071 - ingestion.orchestrator - INFO - INGESTION PIPELINE COMPLETE
+2026-02-14 22:11:58,071 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 22:11:58,071 - ingestion.orchestrator - INFO - 
+INGESTION SUMMARY:
+2026-02-14 22:11:58,072 - ingestion.orchestrator - INFO -   merchants_loaded: 50
+2026-02-14 22:11:58,072 - ingestion.orchestrator - INFO -   api_responses_fetched: 9
+2026-02-14 22:11:58,072 - ingestion.orchestrator - INFO -   countries_enriched: 23
+2026-02-14 22:11:58,072 - ingestion.orchestrator - INFO -   companies_fetched: 0
+2026-02-14 22:11:58,072 - ingestion.orchestrator - INFO -   pdfs_processed: 1
+2026-02-14 22:11:58,072 - ingestion.orchestrator - INFO -   web_data_scraped: True
+2026-02-14 22:11:58,072 - __main__ - INFO - 
+[PHASE 2] Engineering features for risk model...
+2026-02-14 22:11:58,077 - __main__ - INFO -   Target distribution: {0: 36, 1: 14}
+2026-02-14 22:11:58,077 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-14 22:11:58,083 - features.feature_builder - INFO - Engineered 11 features: ['log_monthly_volume', 'log_transaction_count', 'avg_transaction_size', 'volume_transaction_ratio', 'volume_band', 'region_risk', 'company_status_risk', 'api_risk_score', 'has_country_data', 'has_company_data', 'is_uk_registered']
+2026-02-14 22:11:58,083 - __main__ - INFO - ✓ Engineered 11 features
+2026-02-14 22:11:58,083 - __main__ - INFO - 
+[PHASE 3] Training risk classification model...
+2026-02-14 22:11:58,083 - model.model_trainer - INFO - Training risk classification model
+2026-02-14 22:11:58,086 - model.model_trainer - INFO - Train set: 40, Test set: 10
+2026-02-14 22:11:58,086 - model.model_trainer - INFO - Target distribution - Train: {0: 29, 1: 11}
+2026-02-14 22:11:58,100 - model.model_trainer - INFO - Model AUC: 0.667
+2026-02-14 22:11:58,102 - model.model_trainer - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.70      1.00      0.82         7
+           1       0.00      0.00      0.00         3
+
+    accuracy                           0.70        10
+   macro avg       0.35      0.50      0.41        10
+weighted avg       0.49      0.70      0.58        10
+
+2026-02-14 22:11:58,102 - __main__ - INFO - ✓ Model trained (AUC: 0.667)
+2026-02-14 22:11:58,102 - __main__ - INFO -   Train size: 40, Test size: 10
+2026-02-14 22:11:58,102 - __main__ - INFO - 
+[PHASE 4] Generating risk predictions...
+2026-02-14 22:11:58,103 - __main__ - INFO - ✓ Generated predictions for 50 merchants
+2026-02-14 22:11:58,103 - __main__ - INFO - 
+[PHASE 5] Aggregating portfolio-level risk...
+2026-02-14 22:11:58,103 - model.portfolio - INFO - Aggregating portfolio-level risk metrics
+2026-02-14 22:11:58,103 - model.portfolio - INFO - Portfolio metrics: 6/50 high-risk merchants
+2026-02-14 22:11:58,103 - model.portfolio - INFO - Expected loss: 1441488.93, Risk distribution: {'low': np.int64(32), 'medium': np.int64(17), 'high': np.int64(1)}
+2026-02-14 22:11:58,103 - __main__ - INFO - ✓ Portfolio summary:
+2026-02-14 22:11:58,103 - __main__ - INFO -   Total merchants: 50
+2026-02-14 22:11:58,103 - __main__ - INFO -   High-risk count: 6
+2026-02-14 22:11:58,103 - __main__ - INFO -   Expected loss: 1441488.93
+2026-02-14 22:11:58,104 - __main__ - INFO - 
+[PHASE 6] Generating LLM-powered underwriting report...
+2026-02-14 22:11:58,104 - reporting.llm_reporter - WARNING - LLM client not initialized; generating template report
+2026-02-14 22:11:58,104 - __main__ - INFO - ✓ Report generated successfully
+2026-02-14 22:11:58,104 - __main__ - INFO -   Saved to data/underwriting_report.txt
+2026-02-14 22:11:58,104 - model.model_trainer - INFO - Saving model to model/risk_model.pkl
+2026-02-14 22:11:58,105 - __main__ - INFO - ✓ Model saved to model/risk_model.pkl
+2026-02-14 22:11:58,106 - __main__ - INFO - ✓ Saved collated data with predictions
+2026-02-14 22:11:58,106 - __main__ - INFO - 
+================================================================================
+2026-02-14 22:11:58,106 - __main__ - INFO - PIPELINE EXECUTION COMPLETE
+2026-02-14 22:11:58,106 - __main__ - INFO - ================================================================================
+2026-02-14 22:12:31,511 - __main__ - INFO - 
+================================================================================
+2026-02-14 22:12:31,512 - __main__ - INFO - MERCHANT UNDERWRITING PIPELINE
+2026-02-14 22:12:31,512 - __main__ - INFO - ================================================================================
+2026-02-14 22:12:31,512 - __main__ - INFO - 
+[PHASE 1] Ingesting data from all sources...
+2026-02-14 22:12:31,512 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 22:12:31,512 - ingestion.orchestrator - INFO - STARTING INGESTION PIPELINE
+2026-02-14 22:12:31,512 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 22:12:31,512 - ingestion.orchestrator - INFO - PHASE 1: Loading merchant CSV...
+2026-02-14 22:12:31,512 - ingestion.csv_loader - INFO - Loading merchants from data/merchants.csv
+2026-02-14 22:12:31,516 - ingestion.csv_loader - INFO - Loaded 50 valid merchants, 0 errors
+2026-02-14 22:12:31,516 - ingestion.orchestrator - INFO - ✓ Loaded 50 merchants from CSV
+2026-02-14 22:12:31,516 - ingestion.orchestrator - INFO - PHASE 2: Fetching data from external APIs...
+2026-02-14 22:12:31,516 - ingestion.orchestrator - INFO - Calling Simulated Risk API...
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M010
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M011
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M012
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M013
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M014
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M015
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M016
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M017
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M018
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M019
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M020
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M021
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M022
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M023
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M024
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M025
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M026
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M027
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M028
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M029
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M030
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M031
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M032
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M033
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M034
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M035
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M036
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M037
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M038
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M039
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M040
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M041
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M042
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M043
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M044
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M045
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M046
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M047
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M048
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M049
+2026-02-14 22:12:31,516 - ingestion.orchestrator - WARNING - ⚠ No API data for M050
+2026-02-14 22:12:31,516 - ingestion.orchestrator - INFO - ✓ Fetched API data for 9 merchants
+2026-02-14 22:12:31,516 - ingestion.orchestrator - INFO - Enriching with country data from REST Countries API...
+2026-02-14 22:12:37,477 - ingestion.orchestrator - INFO - ✓ Enriched 23 countries
+2026-02-14 22:12:37,477 - ingestion.orchestrator - INFO - ⊙ Companies House API key not configured; skipping UK company lookup
+2026-02-14 22:12:37,477 - ingestion.orchestrator - INFO - PHASE 3: Processing PDF asynchronously...
+2026-02-14 22:12:37,522 - ingestion.pdf_processor - INFO - Processing PDF: data/sample_merchant_summary.pdf
+2026-02-14 22:12:37,523 - ingestion.pdf_processor - INFO - Successfully extracted text from PDF (638 characters)
+2026-02-14 22:12:37,524 - ingestion.orchestrator - INFO - ✓ Processed PDF (638 chars)
+2026-02-14 22:12:37,524 - ingestion.orchestrator - INFO - PHASE 4: Scraping Claritypay website...
+2026-02-14 22:12:37,568 - ingestion.web_scraper - INFO - Scraping https://claritypay.com
+2026-02-14 22:12:40,497 - ingestion.web_scraper - INFO - Scraped Claritypay: 21 propositions, 0 partners
+2026-02-14 22:12:40,499 - ingestion.orchestrator - INFO - ✓ Scraped Claritypay: 5 propositions, 0 partners
+2026-02-14 22:12:40,500 - ingestion.orchestrator - INFO - PHASE 5: Collating data from all sources...
+2026-02-14 22:12:40,500 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-14 22:12:40,500 - ingestion.collator - INFO - Collated 50 merchant records
+2026-02-14 22:12:40,500 - ingestion.orchestrator - INFO - ✓ Collated 50 merchant records
+2026-02-14 22:12:40,501 - ingestion.collator - INFO - Saving collated data to data/collated_merchants.csv
+2026-02-14 22:12:40,505 - ingestion.collator - INFO - Saved 50 records to data/collated_merchants.csv
+2026-02-14 22:12:40,505 - ingestion.orchestrator - INFO - ✓ Saved collated data to data/collated_merchants.csv
+2026-02-14 22:12:40,505 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 22:12:40,505 - ingestion.orchestrator - INFO - INGESTION PIPELINE COMPLETE
+2026-02-14 22:12:40,505 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 22:12:40,505 - ingestion.orchestrator - INFO - 
+INGESTION SUMMARY:
+2026-02-14 22:12:40,505 - ingestion.orchestrator - INFO -   merchants_loaded: 50
+2026-02-14 22:12:40,505 - ingestion.orchestrator - INFO -   api_responses_fetched: 9
+2026-02-14 22:12:40,505 - ingestion.orchestrator - INFO -   countries_enriched: 23
+2026-02-14 22:12:40,505 - ingestion.orchestrator - INFO -   companies_fetched: 0
+2026-02-14 22:12:40,505 - ingestion.orchestrator - INFO -   pdfs_processed: 1
+2026-02-14 22:12:40,505 - ingestion.orchestrator - INFO -   web_data_scraped: True
+2026-02-14 22:12:40,506 - __main__ - INFO - 
+[PHASE 2] Engineering features for risk model...
+2026-02-14 22:12:40,509 - __main__ - INFO -   Target distribution: {0: 36, 1: 14}
+2026-02-14 22:12:40,510 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-14 22:12:40,514 - features.feature_builder - INFO - Engineered 11 features: ['log_monthly_volume', 'log_transaction_count', 'avg_transaction_size', 'volume_transaction_ratio', 'volume_band', 'region_risk', 'company_status_risk', 'api_risk_score', 'has_country_data', 'has_company_data', 'is_uk_registered']
+2026-02-14 22:12:40,514 - __main__ - INFO - ✓ Engineered 11 features
+2026-02-14 22:12:40,514 - __main__ - INFO - 
+[PHASE 3] Training risk classification model...
+2026-02-14 22:12:40,514 - model.model_trainer - INFO - Training risk classification model
+2026-02-14 22:12:40,516 - model.model_trainer - INFO - Train set: 40, Test set: 10
+2026-02-14 22:12:40,517 - model.model_trainer - INFO - Target distribution - Train: {0: 29, 1: 11}
+2026-02-14 22:12:40,527 - model.model_trainer - INFO - Model AUC: 0.714
+2026-02-14 22:12:40,529 - model.model_trainer - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.75      0.86      0.80         7
+           1       0.50      0.33      0.40         3
+
+    accuracy                           0.70        10
+   macro avg       0.62      0.60      0.60        10
+weighted avg       0.68      0.70      0.68        10
+
+2026-02-14 22:12:40,529 - __main__ - INFO - ✓ Model trained (AUC: 0.714)
+2026-02-14 22:12:40,530 - __main__ - INFO -   Train size: 40, Test size: 10
+2026-02-14 22:12:40,530 - __main__ - INFO - 
+[PHASE 4] Generating risk predictions...
+2026-02-14 22:12:40,530 - __main__ - INFO - ✓ Generated predictions for 50 merchants
+2026-02-14 22:12:40,530 - __main__ - INFO - 
+[PHASE 5] Aggregating portfolio-level risk...
+2026-02-14 22:12:40,530 - model.portfolio - INFO - Aggregating portfolio-level risk metrics
+2026-02-14 22:12:40,531 - model.portfolio - INFO - Portfolio metrics: 19/50 high-risk merchants
+2026-02-14 22:12:40,531 - model.portfolio - INFO - Expected loss: 2217948.64, Risk distribution: {'low': np.int64(20), 'medium': np.int64(21), 'high': np.int64(9)}
+2026-02-14 22:12:40,531 - __main__ - INFO - ✓ Portfolio summary:
+2026-02-14 22:12:40,531 - __main__ - INFO -   Total merchants: 50
+2026-02-14 22:12:40,531 - __main__ - INFO -   High-risk count: 19
+2026-02-14 22:12:40,531 - __main__ - INFO -   Expected loss: 2217948.64
+2026-02-14 22:12:40,531 - __main__ - INFO - 
+[PHASE 6] Generating LLM-powered underwriting report...
+2026-02-14 22:12:40,531 - reporting.llm_reporter - WARNING - LLM client not initialized; generating template report
+2026-02-14 22:12:40,531 - __main__ - INFO - ✓ Report generated successfully
+2026-02-14 22:12:40,532 - __main__ - INFO -   Saved to data/underwriting_report.txt
+2026-02-14 22:12:40,532 - model.model_trainer - INFO - Saving model to model/risk_model.pkl
+2026-02-14 22:12:40,532 - __main__ - INFO - ✓ Model saved to model/risk_model.pkl
+2026-02-14 22:12:40,533 - __main__ - INFO - ✓ Saved collated data with predictions
+2026-02-14 22:12:40,533 - __main__ - INFO - 
+================================================================================
+2026-02-14 22:12:40,533 - __main__ - INFO - PIPELINE EXECUTION COMPLETE
+2026-02-14 22:12:40,533 - __main__ - INFO - ================================================================================
+2026-02-14 22:12:53,829 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-14 22:12:53,838 - features.feature_builder - INFO - Engineered 11 features: ['log_monthly_volume', 'log_transaction_count', 'avg_transaction_size', 'volume_transaction_ratio', 'volume_band', 'region_risk', 'company_status_risk', 'api_risk_score', 'has_country_data', 'has_company_data', 'is_uk_registered']
+2026-02-14 22:12:53,860 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-14 22:12:53,862 - features.feature_builder - INFO - Engineered 11 features: ['log_monthly_volume', 'log_transaction_count', 'avg_transaction_size', 'volume_transaction_ratio', 'volume_band', 'region_risk', 'company_status_risk', 'api_risk_score', 'has_country_data', 'has_company_data', 'is_uk_registered']
+2026-02-14 22:12:53,862 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-14 22:12:53,864 - features.feature_builder - INFO - Engineered 11 features: ['log_monthly_volume', 'log_transaction_count', 'avg_transaction_size', 'volume_transaction_ratio', 'volume_band', 'region_risk', 'company_status_risk', 'api_risk_score', 'has_country_data', 'has_company_data', 'is_uk_registered']
+2026-02-14 22:13:04,732 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-14 22:13:04,733 - ingestion.collator - INFO - Collated 2 merchant records
+2026-02-14 22:13:04,733 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-14 22:13:04,733 - ingestion.collator - INFO - Collated 2 merchant records
+2026-02-14 22:13:04,734 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-14 22:13:04,734 - ingestion.collator - INFO - Collated 2 merchant records
+2026-02-14 22:13:04,734 - ingestion.csv_loader - INFO - Loading merchants from /Users/aadityagoel/Documents/Code/MLE-Hiring/data/merchants.csv
+2026-02-14 22:13:04,738 - ingestion.csv_loader - INFO - Loaded 50 valid merchants, 0 errors
+2026-02-14 22:13:04,741 - ingestion.csv_loader - INFO - Loading merchants from /private/var/folders/cc/4f1bjk3x1cv56k7sdv9bm3th0000gn/T/pytest-of-aadityagoel/pytest-3/test_csv_with_valid_and_invali0/test.csv
+2026-02-14 22:13:04,742 - ingestion.csv_loader - WARNING - Validation error: Row 1: 2 validation errors for MerchantCSV
+merchant_id
+  Value error, merchant_id must start with 'M' [type=value_error, input_value='INVALID', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/value_error
+monthly_volume
+  Input should be greater than or equal to 0 [type=greater_than_equal, input_value=-100, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/greater_than_equal
+2026-02-14 22:13:04,742 - ingestion.csv_loader - INFO - Loaded 2 valid merchants, 1 errors
+2026-02-14 22:13:04,742 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-14 22:13:04,744 - features.feature_builder - INFO - Engineered 11 features: ['log_monthly_volume', 'log_transaction_count', 'avg_transaction_size', 'volume_transaction_ratio', 'volume_band', 'region_risk', 'company_status_risk', 'api_risk_score', 'has_country_data', 'has_company_data', 'is_uk_registered']
+2026-02-14 22:13:04,745 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-14 22:13:04,746 - features.feature_builder - INFO - Engineered 11 features: ['log_monthly_volume', 'log_transaction_count', 'avg_transaction_size', 'volume_transaction_ratio', 'volume_band', 'region_risk', 'company_status_risk', 'api_risk_score', 'has_country_data', 'has_company_data', 'is_uk_registered']
+2026-02-14 22:13:04,746 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-14 22:13:04,747 - features.feature_builder - INFO - Engineered 11 features: ['log_monthly_volume', 'log_transaction_count', 'avg_transaction_size', 'volume_transaction_ratio', 'volume_band', 'region_risk', 'company_status_risk', 'api_risk_score', 'has_country_data', 'has_company_data', 'is_uk_registered']
+2026-02-14 22:13:04,748 - tests.test_integration - INFO - Starting integration test...
+2026-02-14 22:13:04,748 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 22:13:04,749 - ingestion.orchestrator - INFO - STARTING INGESTION PIPELINE
+2026-02-14 22:13:04,749 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 22:13:04,749 - ingestion.orchestrator - INFO - PHASE 1: Loading merchant CSV...
+2026-02-14 22:13:04,749 - ingestion.csv_loader - INFO - Loading merchants from /Users/aadityagoel/Documents/Code/MLE-Hiring/data/merchants.csv
+2026-02-14 22:13:04,750 - ingestion.csv_loader - INFO - Loaded 50 valid merchants, 0 errors
+2026-02-14 22:13:04,750 - ingestion.orchestrator - INFO - ✓ Loaded 50 merchants from CSV
+2026-02-14 22:13:04,750 - ingestion.orchestrator - INFO - PHASE 2: Fetching data from external APIs...
+2026-02-14 22:13:04,750 - ingestion.orchestrator - INFO - Calling Simulated Risk API...
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M010
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M011
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M012
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M013
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M014
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M015
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M016
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M017
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M018
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M019
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M020
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M021
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M022
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M023
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M024
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M025
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M026
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M027
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M028
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M029
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M030
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M031
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M032
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M033
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M034
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M035
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M036
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M037
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M038
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M039
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M040
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M041
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M042
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M043
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M044
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M045
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M046
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M047
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M048
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M049
+2026-02-14 22:13:04,750 - ingestion.orchestrator - WARNING - ⚠ No API data for M050
+2026-02-14 22:13:04,750 - ingestion.orchestrator - INFO - ✓ Fetched API data for 9 merchants
+2026-02-14 22:13:04,750 - ingestion.orchestrator - INFO - Enriching with country data from REST Countries API...
+2026-02-14 22:13:17,707 - ingestion.orchestrator - INFO - ✓ Enriched 23 countries
+2026-02-14 22:13:17,708 - ingestion.orchestrator - INFO - ⊙ Companies House API key not configured; skipping UK company lookup
+2026-02-14 22:13:17,708 - ingestion.orchestrator - INFO - PHASE 3: Processing PDF asynchronously...
+2026-02-14 22:13:17,749 - ingestion.pdf_processor - INFO - Processing PDF: /Users/aadityagoel/Documents/Code/MLE-Hiring/data/sample_merchant_summary.pdf
+2026-02-14 22:13:17,751 - ingestion.pdf_processor - INFO - Successfully extracted text from PDF (638 characters)
+2026-02-14 22:13:17,751 - ingestion.orchestrator - INFO - ✓ Processed PDF (638 chars)
+2026-02-14 22:13:17,751 - ingestion.orchestrator - INFO - PHASE 4: Scraping Claritypay website...
+2026-02-14 22:13:17,795 - ingestion.web_scraper - INFO - Scraping https://claritypay.com
+2026-02-14 22:13:20,247 - ingestion.web_scraper - INFO - Scraped Claritypay: 21 propositions, 0 partners
+2026-02-14 22:13:20,250 - ingestion.orchestrator - INFO - ✓ Scraped Claritypay: 5 propositions, 0 partners
+2026-02-14 22:13:20,250 - ingestion.orchestrator - INFO - PHASE 5: Collating data from all sources...
+2026-02-14 22:13:20,250 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-14 22:13:20,250 - ingestion.collator - INFO - Collated 50 merchant records
+2026-02-14 22:13:20,250 - ingestion.orchestrator - INFO - ✓ Collated 50 merchant records
+2026-02-14 22:13:20,250 - ingestion.collator - INFO - Saving collated data to data/collated_merchants.csv
+2026-02-14 22:13:20,254 - ingestion.collator - INFO - Saved 50 records to data/collated_merchants.csv
+2026-02-14 22:13:20,254 - ingestion.orchestrator - INFO - ✓ Saved collated data to data/collated_merchants.csv
+2026-02-14 22:13:20,254 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 22:13:20,254 - ingestion.orchestrator - INFO - INGESTION PIPELINE COMPLETE
+2026-02-14 22:13:20,254 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 22:13:20,254 - ingestion.orchestrator - INFO - 
+INGESTION SUMMARY:
+2026-02-14 22:13:20,254 - ingestion.orchestrator - INFO -   merchants_loaded: 50
+2026-02-14 22:13:20,254 - ingestion.orchestrator - INFO -   api_responses_fetched: 9
+2026-02-14 22:13:20,254 - ingestion.orchestrator - INFO -   countries_enriched: 23
+2026-02-14 22:13:20,255 - ingestion.orchestrator - INFO -   companies_fetched: 0
+2026-02-14 22:13:20,255 - ingestion.orchestrator - INFO -   pdfs_processed: 1
+2026-02-14 22:13:20,255 - ingestion.orchestrator - INFO -   web_data_scraped: True
+2026-02-14 22:13:20,255 - tests.test_integration - INFO - 
+✓ Ingestion successful! Collated 50 merchants
+2026-02-14 22:13:20,255 - tests.test_integration - INFO - 
+Sample collated record:
+2026-02-14 22:13:20,255 - tests.test_integration - INFO -   merchant_id: M001
+2026-02-14 22:13:20,255 - tests.test_integration - INFO -   name: GreenLeaf Retail Ltd
+2026-02-14 22:13:20,255 - tests.test_integration - INFO -   country: United Kingdom
+2026-02-14 22:13:20,256 - tests.test_integration - INFO -   country_code: GB
+2026-02-14 22:13:20,256 - tests.test_integration - INFO -   region: Europe
+2026-02-14 22:13:20,256 - tests.test_integration - INFO -   subregion: Northern Europe
+2026-02-14 22:13:20,256 - tests.test_integration - INFO -   registration_number: 09446239
+2026-02-14 22:13:20,256 - tests.test_integration - INFO -   company_status: None
+2026-02-14 22:13:20,256 - tests.test_integration - INFO -   company_incorporation_date: None
+2026-02-14 22:13:20,256 - tests.test_integration - INFO -   monthly_volume: 125000.0
+2026-02-14 22:13:20,259 - ingestion.csv_loader - INFO - Loading merchants from /Users/aadityagoel/Documents/Code/MLE-Hiring/data/merchants.csv
+2026-02-14 22:13:20,261 - ingestion.csv_loader - INFO - Loaded 50 valid merchants, 0 errors
+2026-02-14 22:13:20,261 - ingestion.orchestrator - INFO - ✓ Loaded 50 merchants from CSV
+2026-02-14 23:06:01,869 - __main__ - INFO - 
+================================================================================
+2026-02-14 23:06:01,870 - __main__ - INFO - MERCHANT UNDERWRITING PIPELINE
+2026-02-14 23:06:01,870 - __main__ - INFO - ================================================================================
+2026-02-14 23:06:01,870 - __main__ - INFO - 
+[PHASE 1] Ingesting data from all sources...
+2026-02-14 23:06:01,870 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 23:06:01,870 - ingestion.orchestrator - INFO - STARTING INGESTION PIPELINE
+2026-02-14 23:06:01,870 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 23:06:01,870 - ingestion.orchestrator - INFO - PHASE 1: Loading merchant CSV...
+2026-02-14 23:06:01,870 - ingestion.csv_loader - INFO - Loading merchants from data/merchants.csv
+2026-02-14 23:06:01,874 - ingestion.csv_loader - INFO - Loaded 50 valid merchants, 0 errors
+2026-02-14 23:06:01,875 - ingestion.orchestrator - INFO - ✓ Loaded 50 merchants from CSV
+2026-02-14 23:06:01,875 - ingestion.orchestrator - INFO - PHASE 2: Fetching data from external APIs...
+2026-02-14 23:06:01,875 - ingestion.orchestrator - INFO - Calling Simulated Risk API...
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M010
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M011
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M012
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M013
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M014
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M015
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M016
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M017
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M018
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M019
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M020
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M021
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M022
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M023
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M024
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M025
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M026
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M027
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M028
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M029
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M030
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M031
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M032
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M033
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M034
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M035
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M036
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M037
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M038
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M039
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M040
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M041
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M042
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M043
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M044
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M045
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M046
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M047
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M048
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M049
+2026-02-14 23:06:01,875 - ingestion.orchestrator - WARNING - ⚠ No API data for M050
+2026-02-14 23:06:01,875 - ingestion.orchestrator - INFO - ✓ Fetched API data for 9 merchants
+2026-02-14 23:06:01,875 - ingestion.orchestrator - INFO - Enriching with country data from REST Countries API...
+2026-02-14 23:06:08,233 - ingestion.orchestrator - INFO - ✓ Enriched 23 countries
+2026-02-14 23:06:08,233 - ingestion.orchestrator - INFO - ⊙ Companies House API key not configured; skipping UK company lookup
+2026-02-14 23:06:08,233 - ingestion.orchestrator - INFO - PHASE 3: Processing PDF asynchronously...
+2026-02-14 23:06:08,277 - ingestion.pdf_processor - INFO - Processing PDF: data/sample_merchant_summary.pdf
+2026-02-14 23:06:08,279 - ingestion.pdf_processor - INFO - Successfully extracted text from PDF (638 characters)
+2026-02-14 23:06:08,279 - ingestion.orchestrator - INFO - ✓ Processed PDF (638 chars)
+2026-02-14 23:06:08,280 - ingestion.orchestrator - INFO - PHASE 4: Scraping Claritypay website...
+2026-02-14 23:06:08,323 - ingestion.web_scraper - INFO - Scraping https://claritypay.com
+2026-02-14 23:06:10,450 - ingestion.web_scraper - INFO - Scraped Claritypay: 21 propositions, 0 partners
+2026-02-14 23:06:10,453 - ingestion.orchestrator - INFO - ✓ Scraped Claritypay: 5 propositions, 0 partners
+2026-02-14 23:06:10,453 - ingestion.orchestrator - INFO - PHASE 5: Collating data from all sources...
+2026-02-14 23:06:10,453 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-14 23:06:10,453 - ingestion.collator - INFO - Collated 50 merchant records
+2026-02-14 23:06:10,453 - ingestion.orchestrator - INFO - ✓ Collated 50 merchant records
+2026-02-14 23:06:10,453 - ingestion.collator - INFO - Saving collated data to data/collated_merchants.csv
+2026-02-14 23:06:10,457 - ingestion.collator - INFO - Saved 50 records to data/collated_merchants.csv
+2026-02-14 23:06:10,457 - ingestion.orchestrator - INFO - ✓ Saved collated data to data/collated_merchants.csv
+2026-02-14 23:06:10,457 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 23:06:10,457 - ingestion.orchestrator - INFO - INGESTION PIPELINE COMPLETE
+2026-02-14 23:06:10,457 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 23:06:10,457 - ingestion.orchestrator - INFO - 
+INGESTION SUMMARY:
+2026-02-14 23:06:10,458 - ingestion.orchestrator - INFO -   merchants_loaded: 50
+2026-02-14 23:06:10,458 - ingestion.orchestrator - INFO -   api_responses_fetched: 9
+2026-02-14 23:06:10,458 - ingestion.orchestrator - INFO -   countries_enriched: 23
+2026-02-14 23:06:10,458 - ingestion.orchestrator - INFO -   companies_fetched: 0
+2026-02-14 23:06:10,458 - ingestion.orchestrator - INFO -   pdfs_processed: 1
+2026-02-14 23:06:10,458 - ingestion.orchestrator - INFO -   web_data_scraped: True
+2026-02-14 23:06:10,458 - __main__ - INFO - 
+[PHASE 2] Engineering features for risk model...
+2026-02-14 23:06:10,462 - __main__ - INFO -   Target distribution: {0: 36, 1: 14}
+2026-02-14 23:06:10,462 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-14 23:06:10,466 - features.feature_builder - INFO - Engineered 11 features: ['log_monthly_volume', 'log_transaction_count', 'avg_transaction_size', 'volume_transaction_ratio', 'volume_band', 'region_risk', 'company_status_risk', 'api_risk_score', 'has_country_data', 'has_company_data', 'is_uk_registered']
+2026-02-14 23:06:10,466 - __main__ - INFO - ✓ Engineered 11 features
+2026-02-14 23:06:10,466 - __main__ - INFO - 
+[PHASE 3] Training risk classification model...
+2026-02-14 23:06:10,466 - model.model_trainer - INFO - Training risk classification model
+2026-02-14 23:06:10,469 - model.model_trainer - INFO - Train set: 40, Test set: 10
+2026-02-14 23:06:10,469 - model.model_trainer - INFO - Target distribution - Train: {0: 29, 1: 11}
+2026-02-14 23:06:10,484 - model.model_trainer - INFO - Model AUC: 0.714
+2026-02-14 23:06:10,486 - model.model_trainer - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.75      0.86      0.80         7
+           1       0.50      0.33      0.40         3
+
+    accuracy                           0.70        10
+   macro avg       0.62      0.60      0.60        10
+weighted avg       0.68      0.70      0.68        10
+
+2026-02-14 23:06:10,486 - __main__ - INFO - ✓ Model trained (AUC: 0.714)
+2026-02-14 23:06:10,486 - __main__ - INFO -   Train size: 40, Test size: 10
+2026-02-14 23:06:10,486 - __main__ - INFO - 
+[PHASE 4] Generating risk predictions...
+2026-02-14 23:06:10,486 - __main__ - INFO - ✓ Generated predictions for 50 merchants
+2026-02-14 23:06:10,486 - __main__ - INFO - 
+[PHASE 5] Aggregating portfolio-level risk...
+2026-02-14 23:06:10,486 - model.portfolio - INFO - Aggregating portfolio-level risk metrics
+2026-02-14 23:06:10,487 - model.portfolio - INFO - Portfolio metrics: 19/50 high-risk merchants
+2026-02-14 23:06:10,487 - model.portfolio - INFO - Expected loss: 2217948.64, Risk distribution: {'low': np.int64(20), 'medium': np.int64(21), 'high': np.int64(9)}
+2026-02-14 23:06:10,487 - __main__ - INFO - ✓ Portfolio summary:
+2026-02-14 23:06:10,487 - __main__ - INFO -   Total merchants: 50
+2026-02-14 23:06:10,487 - __main__ - INFO -   High-risk count: 19
+2026-02-14 23:06:10,487 - __main__ - INFO -   Expected loss: 2217948.64
+2026-02-14 23:06:10,487 - __main__ - INFO - 
+[PHASE 6] Generating LLM-powered underwriting report...
+2026-02-14 23:31:22,099 - __main__ - INFO - 
+================================================================================
+2026-02-14 23:31:22,100 - __main__ - INFO - MERCHANT UNDERWRITING PIPELINE
+2026-02-14 23:31:22,100 - __main__ - INFO - ================================================================================
+2026-02-14 23:31:22,100 - __main__ - INFO - 
+[PHASE 1] Ingesting data from all sources...
+2026-02-14 23:31:22,100 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 23:31:22,100 - ingestion.orchestrator - INFO - STARTING INGESTION PIPELINE
+2026-02-14 23:31:22,100 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 23:31:22,100 - ingestion.orchestrator - INFO - PHASE 1: Loading merchant CSV...
+2026-02-14 23:31:22,100 - ingestion.csv_loader - INFO - Loading merchants from data/merchants.csv
+2026-02-14 23:31:22,103 - ingestion.csv_loader - INFO - Loaded 50 valid merchants, 0 errors
+2026-02-14 23:31:22,103 - ingestion.orchestrator - INFO - ✓ Loaded 50 merchants from CSV
+2026-02-14 23:31:22,103 - ingestion.orchestrator - INFO - PHASE 2: Fetching data from external APIs...
+2026-02-14 23:31:22,103 - ingestion.orchestrator - INFO - Calling Simulated Risk API...
+2026-02-14 23:31:22,103 - ingestion.orchestrator - WARNING - ⚠ No API data for M010
+2026-02-14 23:31:22,103 - ingestion.orchestrator - WARNING - ⚠ No API data for M011
+2026-02-14 23:31:22,103 - ingestion.orchestrator - WARNING - ⚠ No API data for M012
+2026-02-14 23:31:22,103 - ingestion.orchestrator - WARNING - ⚠ No API data for M013
+2026-02-14 23:31:22,103 - ingestion.orchestrator - WARNING - ⚠ No API data for M014
+2026-02-14 23:31:22,103 - ingestion.orchestrator - WARNING - ⚠ No API data for M015
+2026-02-14 23:31:22,103 - ingestion.orchestrator - WARNING - ⚠ No API data for M016
+2026-02-14 23:31:22,103 - ingestion.orchestrator - WARNING - ⚠ No API data for M017
+2026-02-14 23:31:22,103 - ingestion.orchestrator - WARNING - ⚠ No API data for M018
+2026-02-14 23:31:22,103 - ingestion.orchestrator - WARNING - ⚠ No API data for M019
+2026-02-14 23:31:22,103 - ingestion.orchestrator - WARNING - ⚠ No API data for M020
+2026-02-14 23:31:22,103 - ingestion.orchestrator - WARNING - ⚠ No API data for M021
+2026-02-14 23:31:22,103 - ingestion.orchestrator - WARNING - ⚠ No API data for M022
+2026-02-14 23:31:22,103 - ingestion.orchestrator - WARNING - ⚠ No API data for M023
+2026-02-14 23:31:22,103 - ingestion.orchestrator - WARNING - ⚠ No API data for M024
+2026-02-14 23:31:22,103 - ingestion.orchestrator - WARNING - ⚠ No API data for M025
+2026-02-14 23:31:22,103 - ingestion.orchestrator - WARNING - ⚠ No API data for M026
+2026-02-14 23:31:22,103 - ingestion.orchestrator - WARNING - ⚠ No API data for M027
+2026-02-14 23:31:22,104 - ingestion.orchestrator - WARNING - ⚠ No API data for M028
+2026-02-14 23:31:22,104 - ingestion.orchestrator - WARNING - ⚠ No API data for M029
+2026-02-14 23:31:22,104 - ingestion.orchestrator - WARNING - ⚠ No API data for M030
+2026-02-14 23:31:22,104 - ingestion.orchestrator - WARNING - ⚠ No API data for M031
+2026-02-14 23:31:22,104 - ingestion.orchestrator - WARNING - ⚠ No API data for M032
+2026-02-14 23:31:22,104 - ingestion.orchestrator - WARNING - ⚠ No API data for M033
+2026-02-14 23:31:22,104 - ingestion.orchestrator - WARNING - ⚠ No API data for M034
+2026-02-14 23:31:22,104 - ingestion.orchestrator - WARNING - ⚠ No API data for M035
+2026-02-14 23:31:22,104 - ingestion.orchestrator - WARNING - ⚠ No API data for M036
+2026-02-14 23:31:22,104 - ingestion.orchestrator - WARNING - ⚠ No API data for M037
+2026-02-14 23:31:22,104 - ingestion.orchestrator - WARNING - ⚠ No API data for M038
+2026-02-14 23:31:22,104 - ingestion.orchestrator - WARNING - ⚠ No API data for M039
+2026-02-14 23:31:22,104 - ingestion.orchestrator - WARNING - ⚠ No API data for M040
+2026-02-14 23:31:22,104 - ingestion.orchestrator - WARNING - ⚠ No API data for M041
+2026-02-14 23:31:22,104 - ingestion.orchestrator - WARNING - ⚠ No API data for M042
+2026-02-14 23:31:22,104 - ingestion.orchestrator - WARNING - ⚠ No API data for M043
+2026-02-14 23:31:22,104 - ingestion.orchestrator - WARNING - ⚠ No API data for M044
+2026-02-14 23:31:22,104 - ingestion.orchestrator - WARNING - ⚠ No API data for M045
+2026-02-14 23:31:22,104 - ingestion.orchestrator - WARNING - ⚠ No API data for M046
+2026-02-14 23:31:22,104 - ingestion.orchestrator - WARNING - ⚠ No API data for M047
+2026-02-14 23:31:22,104 - ingestion.orchestrator - WARNING - ⚠ No API data for M048
+2026-02-14 23:31:22,104 - ingestion.orchestrator - WARNING - ⚠ No API data for M049
+2026-02-14 23:31:22,104 - ingestion.orchestrator - WARNING - ⚠ No API data for M050
+2026-02-14 23:31:22,104 - ingestion.orchestrator - INFO - ✓ Fetched API data for 9 merchants
+2026-02-14 23:31:22,104 - ingestion.orchestrator - INFO - Enriching with country data from REST Countries API...
+2026-02-14 23:31:35,027 - ingestion.orchestrator - INFO - ✓ Enriched 23 countries
+2026-02-14 23:31:35,027 - ingestion.orchestrator - INFO - ⊙ Companies House API key not configured; skipping UK company lookup
+2026-02-14 23:31:35,027 - ingestion.orchestrator - INFO - PHASE 3: Processing PDF asynchronously...
+2026-02-14 23:31:35,069 - ingestion.pdf_processor - INFO - Processing PDF: data/sample_merchant_summary.pdf
+2026-02-14 23:31:35,071 - ingestion.pdf_processor - INFO - Successfully extracted text from PDF (638 characters)
+2026-02-14 23:31:35,071 - ingestion.orchestrator - INFO - ✓ Processed PDF (638 chars)
+2026-02-14 23:31:35,071 - ingestion.orchestrator - INFO - PHASE 4: Scraping Claritypay website...
+2026-02-14 23:31:35,226 - ingestion.web_scraper - INFO - Scraping https://claritypay.com
+2026-02-14 23:31:36,629 - ingestion.web_scraper - INFO - Scraped Claritypay: 21 propositions, 0 partners
+2026-02-14 23:31:36,631 - ingestion.orchestrator - INFO - ✓ Scraped Claritypay: 5 propositions, 0 partners
+2026-02-14 23:31:36,631 - ingestion.orchestrator - INFO - PHASE 5: Collating data from all sources...
+2026-02-14 23:31:36,631 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-14 23:31:36,631 - ingestion.collator - INFO - Collated 50 merchant records
+2026-02-14 23:31:36,631 - ingestion.orchestrator - INFO - ✓ Collated 50 merchant records
+2026-02-14 23:31:36,631 - ingestion.collator - INFO - Saving collated data to data/collated_merchants.csv
+2026-02-14 23:31:36,634 - ingestion.collator - INFO - Saved 50 records to data/collated_merchants.csv
+2026-02-14 23:31:36,634 - ingestion.orchestrator - INFO - ✓ Saved collated data to data/collated_merchants.csv
+2026-02-14 23:31:36,634 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 23:31:36,634 - ingestion.orchestrator - INFO - INGESTION PIPELINE COMPLETE
+2026-02-14 23:31:36,634 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 23:31:36,634 - ingestion.orchestrator - INFO - 
+INGESTION SUMMARY:
+2026-02-14 23:31:36,634 - ingestion.orchestrator - INFO -   merchants_loaded: 50
+2026-02-14 23:31:36,634 - ingestion.orchestrator - INFO -   api_responses_fetched: 9
+2026-02-14 23:31:36,634 - ingestion.orchestrator - INFO -   countries_enriched: 23
+2026-02-14 23:31:36,634 - ingestion.orchestrator - INFO -   companies_fetched: 0
+2026-02-14 23:31:36,634 - ingestion.orchestrator - INFO -   pdfs_processed: 1
+2026-02-14 23:31:36,634 - ingestion.orchestrator - INFO -   web_data_scraped: True
+2026-02-14 23:31:36,635 - __main__ - INFO - 
+[PHASE 2] Engineering features for risk model...
+2026-02-14 23:31:36,636 - __main__ - INFO -   Target distribution: {0: 36, 1: 14}
+2026-02-14 23:31:36,636 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-14 23:31:36,639 - features.feature_builder - INFO - Engineered 11 features: ['log_monthly_volume', 'log_transaction_count', 'avg_transaction_size', 'volume_transaction_ratio', 'volume_band', 'region_risk', 'company_status_risk', 'api_risk_score', 'has_country_data', 'has_company_data', 'is_uk_registered']
+2026-02-14 23:31:36,639 - __main__ - INFO - ✓ Engineered 11 features
+2026-02-14 23:31:36,640 - __main__ - INFO - 
+[PHASE 3] Training risk classification model...
+2026-02-14 23:31:36,640 - model.model_trainer - INFO - Training risk classification model
+2026-02-14 23:31:36,641 - model.model_trainer - INFO - Train set: 40, Test set: 10
+2026-02-14 23:31:36,641 - model.model_trainer - INFO - Target distribution - Train: {0: 29, 1: 11}
+2026-02-14 23:31:36,648 - model.model_trainer - INFO - Model AUC: 0.714
+2026-02-14 23:31:36,650 - model.model_trainer - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.75      0.86      0.80         7
+           1       0.50      0.33      0.40         3
+
+    accuracy                           0.70        10
+   macro avg       0.62      0.60      0.60        10
+weighted avg       0.68      0.70      0.68        10
+
+2026-02-14 23:31:36,650 - __main__ - INFO - ✓ Model trained (AUC: 0.714)
+2026-02-14 23:31:36,650 - __main__ - INFO -   Train size: 40, Test size: 10
+2026-02-14 23:31:36,650 - __main__ - INFO - 
+[PHASE 4] Generating risk predictions...
+2026-02-14 23:31:36,650 - __main__ - INFO - ✓ Generated predictions for 50 merchants
+2026-02-14 23:31:36,650 - __main__ - INFO - 
+[PHASE 5] Aggregating portfolio-level risk...
+2026-02-14 23:31:36,650 - model.portfolio - INFO - Aggregating portfolio-level risk metrics
+2026-02-14 23:31:36,651 - model.portfolio - INFO - Portfolio metrics: 19/50 high-risk merchants
+2026-02-14 23:31:36,651 - model.portfolio - INFO - Expected loss: 2217952.50, Risk distribution: {'low': 20, 'medium': 21, 'high': 9}
+2026-02-14 23:31:36,651 - __main__ - INFO - ✓ Portfolio summary:
+2026-02-14 23:31:36,651 - __main__ - INFO -   Total merchants: 50
+2026-02-14 23:31:36,651 - __main__ - INFO -   High-risk count: 19
+2026-02-14 23:31:36,651 - __main__ - INFO -   Expected loss: 2217952.50
+2026-02-14 23:31:36,651 - __main__ - INFO - 
+[PHASE 6] Generating LLM-powered underwriting report...
+2026-02-14 23:31:36,769 - reporting.llm_reporter - WARNING - Failed to initialize OpenAI client: Client.__init__() got an unexpected keyword argument 'proxies'; report generation will use template
+2026-02-14 23:31:36,769 - reporting.llm_reporter - WARNING - LLM client not initialized; generating template report
+2026-02-14 23:31:36,769 - __main__ - INFO - ✓ Report generated successfully
+2026-02-14 23:31:36,769 - __main__ - INFO -   Saved to data/underwriting_report.txt
+2026-02-14 23:31:36,770 - model.model_trainer - INFO - Saving model to model/risk_model.pkl
+2026-02-14 23:31:36,770 - __main__ - INFO - ✓ Model saved to model/risk_model.pkl
+2026-02-14 23:31:36,770 - __main__ - INFO - ✓ Saved collated data with predictions
+2026-02-14 23:31:36,770 - __main__ - INFO - 
+================================================================================
+2026-02-14 23:31:36,770 - __main__ - INFO - PIPELINE EXECUTION COMPLETE
+2026-02-14 23:31:36,770 - __main__ - INFO - ================================================================================
+2026-02-14 23:32:24,276 - __main__ - INFO - 
+================================================================================
+2026-02-14 23:32:24,277 - __main__ - INFO - MERCHANT UNDERWRITING PIPELINE
+2026-02-14 23:32:24,277 - __main__ - INFO - ================================================================================
+2026-02-14 23:32:24,277 - __main__ - INFO - 
+[PHASE 1] Ingesting data from all sources...
+2026-02-14 23:32:24,277 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 23:32:24,277 - ingestion.orchestrator - INFO - STARTING INGESTION PIPELINE
+2026-02-14 23:32:24,277 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 23:32:24,277 - ingestion.orchestrator - INFO - PHASE 1: Loading merchant CSV...
+2026-02-14 23:32:24,277 - ingestion.csv_loader - INFO - Loading merchants from data/merchants.csv
+2026-02-14 23:32:24,281 - ingestion.csv_loader - INFO - Loaded 50 valid merchants, 0 errors
+2026-02-14 23:32:24,281 - ingestion.orchestrator - INFO - ✓ Loaded 50 merchants from CSV
+2026-02-14 23:32:24,281 - ingestion.orchestrator - INFO - PHASE 2: Fetching data from external APIs...
+2026-02-14 23:32:24,281 - ingestion.orchestrator - INFO - Calling Simulated Risk API...
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M010
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M011
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M012
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M013
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M014
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M015
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M016
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M017
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M018
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M019
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M020
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M021
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M022
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M023
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M024
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M025
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M026
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M027
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M028
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M029
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M030
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M031
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M032
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M033
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M034
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M035
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M036
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M037
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M038
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M039
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M040
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M041
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M042
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M043
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M044
+2026-02-14 23:32:24,281 - ingestion.orchestrator - WARNING - ⚠ No API data for M045
+2026-02-14 23:32:24,282 - ingestion.orchestrator - WARNING - ⚠ No API data for M046
+2026-02-14 23:32:24,282 - ingestion.orchestrator - WARNING - ⚠ No API data for M047
+2026-02-14 23:32:24,282 - ingestion.orchestrator - WARNING - ⚠ No API data for M048
+2026-02-14 23:32:24,282 - ingestion.orchestrator - WARNING - ⚠ No API data for M049
+2026-02-14 23:32:24,282 - ingestion.orchestrator - WARNING - ⚠ No API data for M050
+2026-02-14 23:32:24,282 - ingestion.orchestrator - INFO - ✓ Fetched API data for 9 merchants
+2026-02-14 23:32:24,282 - ingestion.orchestrator - INFO - Enriching with country data from REST Countries API...
+2026-02-14 23:32:30,016 - ingestion.orchestrator - INFO - ✓ Enriched 23 countries
+2026-02-14 23:32:30,016 - ingestion.orchestrator - INFO - ⊙ Companies House API key not configured; skipping UK company lookup
+2026-02-14 23:32:30,016 - ingestion.orchestrator - INFO - PHASE 3: Processing PDF asynchronously...
+2026-02-14 23:32:30,057 - ingestion.pdf_processor - INFO - Processing PDF: data/sample_merchant_summary.pdf
+2026-02-14 23:32:30,058 - ingestion.pdf_processor - INFO - Successfully extracted text from PDF (638 characters)
+2026-02-14 23:32:30,059 - ingestion.orchestrator - INFO - ✓ Processed PDF (638 chars)
+2026-02-14 23:32:30,059 - ingestion.orchestrator - INFO - PHASE 4: Scraping Claritypay website...
+2026-02-14 23:32:30,096 - ingestion.web_scraper - INFO - Scraping https://claritypay.com
+2026-02-14 23:32:31,227 - ingestion.web_scraper - INFO - Scraped Claritypay: 21 propositions, 0 partners
+2026-02-14 23:32:31,229 - ingestion.orchestrator - INFO - ✓ Scraped Claritypay: 5 propositions, 0 partners
+2026-02-14 23:32:31,230 - ingestion.orchestrator - INFO - PHASE 5: Collating data from all sources...
+2026-02-14 23:32:31,230 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-14 23:32:31,230 - ingestion.collator - INFO - Collated 50 merchant records
+2026-02-14 23:32:31,230 - ingestion.orchestrator - INFO - ✓ Collated 50 merchant records
+2026-02-14 23:32:31,230 - ingestion.collator - INFO - Saving collated data to data/collated_merchants.csv
+2026-02-14 23:32:31,234 - ingestion.collator - INFO - Saved 50 records to data/collated_merchants.csv
+2026-02-14 23:32:31,234 - ingestion.orchestrator - INFO - ✓ Saved collated data to data/collated_merchants.csv
+2026-02-14 23:32:31,234 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 23:32:31,234 - ingestion.orchestrator - INFO - INGESTION PIPELINE COMPLETE
+2026-02-14 23:32:31,234 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 23:32:31,234 - ingestion.orchestrator - INFO - 
+INGESTION SUMMARY:
+2026-02-14 23:32:31,234 - ingestion.orchestrator - INFO -   merchants_loaded: 50
+2026-02-14 23:32:31,234 - ingestion.orchestrator - INFO -   api_responses_fetched: 9
+2026-02-14 23:32:31,234 - ingestion.orchestrator - INFO -   countries_enriched: 23
+2026-02-14 23:32:31,234 - ingestion.orchestrator - INFO -   companies_fetched: 0
+2026-02-14 23:32:31,234 - ingestion.orchestrator - INFO -   pdfs_processed: 1
+2026-02-14 23:32:31,234 - ingestion.orchestrator - INFO -   web_data_scraped: True
+2026-02-14 23:32:31,235 - __main__ - INFO - 
+[PHASE 2] Engineering features for risk model...
+2026-02-14 23:32:31,239 - __main__ - INFO -   Target distribution: {0: 36, 1: 14}
+2026-02-14 23:32:31,239 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-14 23:32:31,243 - features.feature_builder - INFO - Engineered 11 features: ['log_monthly_volume', 'log_transaction_count', 'avg_transaction_size', 'volume_transaction_ratio', 'volume_band', 'region_risk', 'company_status_risk', 'api_risk_score', 'has_country_data', 'has_company_data', 'is_uk_registered']
+2026-02-14 23:32:31,243 - __main__ - INFO - ✓ Engineered 11 features
+2026-02-14 23:32:31,243 - __main__ - INFO - 
+[PHASE 3] Training risk classification model...
+2026-02-14 23:32:31,243 - model.model_trainer - INFO - Training risk classification model
+2026-02-14 23:32:31,245 - model.model_trainer - INFO - Train set: 40, Test set: 10
+2026-02-14 23:32:31,245 - model.model_trainer - INFO - Target distribution - Train: {0: 29, 1: 11}
+2026-02-14 23:32:31,256 - model.model_trainer - INFO - Model AUC: 0.714
+2026-02-14 23:32:31,258 - model.model_trainer - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.75      0.86      0.80         7
+           1       0.50      0.33      0.40         3
+
+    accuracy                           0.70        10
+   macro avg       0.62      0.60      0.60        10
+weighted avg       0.68      0.70      0.68        10
+
+2026-02-14 23:32:31,258 - __main__ - INFO - ✓ Model trained (AUC: 0.714)
+2026-02-14 23:32:31,258 - __main__ - INFO -   Train size: 40, Test size: 10
+2026-02-14 23:32:31,258 - __main__ - INFO - 
+[PHASE 4] Generating risk predictions...
+2026-02-14 23:32:31,258 - __main__ - INFO - ✓ Generated predictions for 50 merchants
+2026-02-14 23:32:31,258 - __main__ - INFO - 
+[PHASE 5] Aggregating portfolio-level risk...
+2026-02-14 23:32:31,258 - model.portfolio - INFO - Aggregating portfolio-level risk metrics
+2026-02-14 23:32:31,259 - model.portfolio - INFO - Portfolio metrics: 19/50 high-risk merchants
+2026-02-14 23:32:31,259 - model.portfolio - INFO - Expected loss: 2217952.50, Risk distribution: {'low': 20, 'medium': 21, 'high': 9}
+2026-02-14 23:32:31,259 - __main__ - INFO - ✓ Portfolio summary:
+2026-02-14 23:32:31,259 - __main__ - INFO -   Total merchants: 50
+2026-02-14 23:32:31,259 - __main__ - INFO -   High-risk count: 19
+2026-02-14 23:32:31,259 - __main__ - INFO -   Expected loss: 2217952.50
+2026-02-14 23:32:31,259 - __main__ - INFO - 
+[PHASE 6] Generating LLM-powered underwriting report...
+2026-02-14 23:32:31,410 - reporting.llm_reporter - WARNING - Failed to initialize OpenAI client: Client.__init__() got an unexpected keyword argument 'proxies'; report generation will use template
+2026-02-14 23:32:31,410 - reporting.llm_reporter - WARNING - LLM client not initialized; generating template report
+2026-02-14 23:32:31,410 - __main__ - INFO - ✓ Report generated successfully
+2026-02-14 23:32:31,410 - __main__ - INFO -   Saved to data/underwriting_report.txt
+2026-02-14 23:32:31,410 - model.model_trainer - INFO - Saving model to model/risk_model.pkl
+2026-02-14 23:32:31,411 - __main__ - INFO - ✓ Model saved to model/risk_model.pkl
+2026-02-14 23:32:31,411 - __main__ - INFO - ✓ Saved collated data with predictions
+2026-02-14 23:32:31,411 - __main__ - INFO - 
+================================================================================
+2026-02-14 23:32:31,411 - __main__ - INFO - PIPELINE EXECUTION COMPLETE
+2026-02-14 23:32:31,411 - __main__ - INFO - ================================================================================
+2026-02-14 23:33:12,698 - __main__ - INFO - 
+================================================================================
+2026-02-14 23:33:12,699 - __main__ - INFO - MERCHANT UNDERWRITING PIPELINE
+2026-02-14 23:33:12,699 - __main__ - INFO - ================================================================================
+2026-02-14 23:33:12,699 - __main__ - INFO - 
+[PHASE 1] Ingesting data from all sources...
+2026-02-14 23:33:12,699 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 23:33:12,699 - ingestion.orchestrator - INFO - STARTING INGESTION PIPELINE
+2026-02-14 23:33:12,699 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 23:33:12,699 - ingestion.orchestrator - INFO - PHASE 1: Loading merchant CSV...
+2026-02-14 23:33:12,699 - ingestion.csv_loader - INFO - Loading merchants from data/merchants.csv
+2026-02-14 23:33:12,702 - ingestion.csv_loader - INFO - Loaded 50 valid merchants, 0 errors
+2026-02-14 23:33:12,702 - ingestion.orchestrator - INFO - ✓ Loaded 50 merchants from CSV
+2026-02-14 23:33:12,702 - ingestion.orchestrator - INFO - PHASE 2: Fetching data from external APIs...
+2026-02-14 23:33:12,702 - ingestion.orchestrator - INFO - Calling Simulated Risk API...
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M010
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M011
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M012
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M013
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M014
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M015
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M016
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M017
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M018
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M019
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M020
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M021
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M022
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M023
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M024
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M025
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M026
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M027
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M028
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M029
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M030
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M031
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M032
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M033
+2026-02-14 23:33:12,702 - ingestion.orchestrator - WARNING - ⚠ No API data for M034
+2026-02-14 23:33:12,703 - ingestion.orchestrator - WARNING - ⚠ No API data for M035
+2026-02-14 23:33:12,703 - ingestion.orchestrator - WARNING - ⚠ No API data for M036
+2026-02-14 23:33:12,703 - ingestion.orchestrator - WARNING - ⚠ No API data for M037
+2026-02-14 23:33:12,703 - ingestion.orchestrator - WARNING - ⚠ No API data for M038
+2026-02-14 23:33:12,703 - ingestion.orchestrator - WARNING - ⚠ No API data for M039
+2026-02-14 23:33:12,703 - ingestion.orchestrator - WARNING - ⚠ No API data for M040
+2026-02-14 23:33:12,703 - ingestion.orchestrator - WARNING - ⚠ No API data for M041
+2026-02-14 23:33:12,703 - ingestion.orchestrator - WARNING - ⚠ No API data for M042
+2026-02-14 23:33:12,703 - ingestion.orchestrator - WARNING - ⚠ No API data for M043
+2026-02-14 23:33:12,703 - ingestion.orchestrator - WARNING - ⚠ No API data for M044
+2026-02-14 23:33:12,703 - ingestion.orchestrator - WARNING - ⚠ No API data for M045
+2026-02-14 23:33:12,703 - ingestion.orchestrator - WARNING - ⚠ No API data for M046
+2026-02-14 23:33:12,703 - ingestion.orchestrator - WARNING - ⚠ No API data for M047
+2026-02-14 23:33:12,703 - ingestion.orchestrator - WARNING - ⚠ No API data for M048
+2026-02-14 23:33:12,703 - ingestion.orchestrator - WARNING - ⚠ No API data for M049
+2026-02-14 23:33:12,703 - ingestion.orchestrator - WARNING - ⚠ No API data for M050
+2026-02-14 23:33:12,703 - ingestion.orchestrator - INFO - ✓ Fetched API data for 9 merchants
+2026-02-14 23:33:12,703 - ingestion.orchestrator - INFO - Enriching with country data from REST Countries API...
+2026-02-14 23:33:23,325 - ingestion.orchestrator - INFO - ✓ Enriched 23 countries
+2026-02-14 23:33:23,326 - ingestion.orchestrator - INFO - ⊙ Companies House API key not configured; skipping UK company lookup
+2026-02-14 23:33:23,326 - ingestion.orchestrator - INFO - PHASE 3: Processing PDF asynchronously...
+2026-02-14 23:33:23,368 - ingestion.pdf_processor - INFO - Processing PDF: data/sample_merchant_summary.pdf
+2026-02-14 23:33:23,369 - ingestion.pdf_processor - INFO - Successfully extracted text from PDF (638 characters)
+2026-02-14 23:33:23,369 - ingestion.orchestrator - INFO - ✓ Processed PDF (638 chars)
+2026-02-14 23:33:23,370 - ingestion.orchestrator - INFO - PHASE 4: Scraping Claritypay website...
+2026-02-14 23:33:23,408 - ingestion.web_scraper - INFO - Scraping https://claritypay.com
+2026-02-14 23:33:24,363 - ingestion.web_scraper - INFO - Scraped Claritypay: 21 propositions, 0 partners
+2026-02-14 23:33:24,366 - ingestion.orchestrator - INFO - ✓ Scraped Claritypay: 5 propositions, 0 partners
+2026-02-14 23:33:24,366 - ingestion.orchestrator - INFO - PHASE 5: Collating data from all sources...
+2026-02-14 23:33:24,366 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-14 23:33:24,367 - ingestion.collator - INFO - Collated 50 merchant records
+2026-02-14 23:33:24,367 - ingestion.orchestrator - INFO - ✓ Collated 50 merchant records
+2026-02-14 23:33:24,367 - ingestion.collator - INFO - Saving collated data to data/collated_merchants.csv
+2026-02-14 23:33:24,370 - ingestion.collator - INFO - Saved 50 records to data/collated_merchants.csv
+2026-02-14 23:33:24,371 - ingestion.orchestrator - INFO - ✓ Saved collated data to data/collated_merchants.csv
+2026-02-14 23:33:24,371 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 23:33:24,371 - ingestion.orchestrator - INFO - INGESTION PIPELINE COMPLETE
+2026-02-14 23:33:24,371 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 23:33:24,371 - ingestion.orchestrator - INFO - 
+INGESTION SUMMARY:
+2026-02-14 23:33:24,371 - ingestion.orchestrator - INFO -   merchants_loaded: 50
+2026-02-14 23:33:24,371 - ingestion.orchestrator - INFO -   api_responses_fetched: 9
+2026-02-14 23:33:24,371 - ingestion.orchestrator - INFO -   countries_enriched: 23
+2026-02-14 23:33:24,371 - ingestion.orchestrator - INFO -   companies_fetched: 0
+2026-02-14 23:33:24,371 - ingestion.orchestrator - INFO -   pdfs_processed: 1
+2026-02-14 23:33:24,371 - ingestion.orchestrator - INFO -   web_data_scraped: True
+2026-02-14 23:33:24,372 - __main__ - INFO - 
+[PHASE 2] Engineering features for risk model...
+2026-02-14 23:33:24,375 - __main__ - INFO -   Target distribution: {0: 36, 1: 14}
+2026-02-14 23:33:24,376 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-14 23:33:24,380 - features.feature_builder - INFO - Engineered 11 features: ['log_monthly_volume', 'log_transaction_count', 'avg_transaction_size', 'volume_transaction_ratio', 'volume_band', 'region_risk', 'company_status_risk', 'api_risk_score', 'has_country_data', 'has_company_data', 'is_uk_registered']
+2026-02-14 23:33:24,380 - __main__ - INFO - ✓ Engineered 11 features
+2026-02-14 23:33:24,380 - __main__ - INFO - 
+[PHASE 3] Training risk classification model...
+2026-02-14 23:33:24,381 - model.model_trainer - INFO - Training risk classification model
+2026-02-14 23:33:24,383 - model.model_trainer - INFO - Train set: 40, Test set: 10
+2026-02-14 23:33:24,383 - model.model_trainer - INFO - Target distribution - Train: {0: 29, 1: 11}
+2026-02-14 23:33:24,393 - model.model_trainer - INFO - Model AUC: 0.714
+2026-02-14 23:33:24,395 - model.model_trainer - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.75      0.86      0.80         7
+           1       0.50      0.33      0.40         3
+
+    accuracy                           0.70        10
+   macro avg       0.62      0.60      0.60        10
+weighted avg       0.68      0.70      0.68        10
+
+2026-02-14 23:33:24,395 - __main__ - INFO - ✓ Model trained (AUC: 0.714)
+2026-02-14 23:33:24,395 - __main__ - INFO -   Train size: 40, Test size: 10
+2026-02-14 23:33:24,395 - __main__ - INFO - 
+[PHASE 4] Generating risk predictions...
+2026-02-14 23:33:24,395 - __main__ - INFO - ✓ Generated predictions for 50 merchants
+2026-02-14 23:33:24,395 - __main__ - INFO - 
+[PHASE 5] Aggregating portfolio-level risk...
+2026-02-14 23:33:24,395 - model.portfolio - INFO - Aggregating portfolio-level risk metrics
+2026-02-14 23:33:24,396 - model.portfolio - INFO - Portfolio metrics: 19/50 high-risk merchants
+2026-02-14 23:33:24,396 - model.portfolio - INFO - Expected loss: 2217952.50, Risk distribution: {'low': 20, 'medium': 21, 'high': 9}
+2026-02-14 23:33:24,396 - __main__ - INFO - ✓ Portfolio summary:
+2026-02-14 23:33:24,396 - __main__ - INFO -   Total merchants: 50
+2026-02-14 23:33:24,396 - __main__ - INFO -   High-risk count: 19
+2026-02-14 23:33:24,396 - __main__ - INFO -   Expected loss: 2217952.50
+2026-02-14 23:33:24,396 - __main__ - INFO - 
+[PHASE 6] Generating LLM-powered underwriting report...
+2026-02-14 23:33:24,567 - reporting.llm_reporter - INFO - Generating underwriting report via LLM
+2026-02-14 23:34:00,860 - __main__ - INFO - 
+================================================================================
+2026-02-14 23:34:00,860 - __main__ - INFO - MERCHANT UNDERWRITING PIPELINE
+2026-02-14 23:34:00,861 - __main__ - INFO - ================================================================================
+2026-02-14 23:34:00,861 - __main__ - INFO - 
+[PHASE 1] Ingesting data from all sources...
+2026-02-14 23:34:00,861 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 23:34:00,861 - ingestion.orchestrator - INFO - STARTING INGESTION PIPELINE
+2026-02-14 23:34:00,861 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 23:34:00,861 - ingestion.orchestrator - INFO - PHASE 1: Loading merchant CSV...
+2026-02-14 23:34:00,861 - ingestion.csv_loader - INFO - Loading merchants from data/merchants.csv
+2026-02-14 23:34:00,863 - ingestion.csv_loader - INFO - Loaded 50 valid merchants, 0 errors
+2026-02-14 23:34:00,863 - ingestion.orchestrator - INFO - ✓ Loaded 50 merchants from CSV
+2026-02-14 23:34:00,863 - ingestion.orchestrator - INFO - PHASE 2: Fetching data from external APIs...
+2026-02-14 23:34:00,863 - ingestion.orchestrator - INFO - Calling Simulated Risk API...
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M010
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M011
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M012
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M013
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M014
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M015
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M016
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M017
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M018
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M019
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M020
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M021
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M022
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M023
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M024
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M025
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M026
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M027
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M028
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M029
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M030
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M031
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M032
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M033
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M034
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M035
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M036
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M037
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M038
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M039
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M040
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M041
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M042
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M043
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M044
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M045
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M046
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M047
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M048
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M049
+2026-02-14 23:34:00,863 - ingestion.orchestrator - WARNING - ⚠ No API data for M050
+2026-02-14 23:34:00,863 - ingestion.orchestrator - INFO - ✓ Fetched API data for 9 merchants
+2026-02-14 23:34:00,863 - ingestion.orchestrator - INFO - Enriching with country data from REST Countries API...
+2026-02-14 23:34:07,603 - ingestion.orchestrator - INFO - ✓ Enriched 23 countries
+2026-02-14 23:34:07,604 - ingestion.orchestrator - INFO - ⊙ Companies House API key not configured; skipping UK company lookup
+2026-02-14 23:34:07,604 - ingestion.orchestrator - INFO - PHASE 3: Processing PDF asynchronously...
+2026-02-14 23:34:07,646 - ingestion.pdf_processor - INFO - Processing PDF: data/sample_merchant_summary.pdf
+2026-02-14 23:34:07,648 - ingestion.pdf_processor - INFO - Successfully extracted text from PDF (638 characters)
+2026-02-14 23:34:07,648 - ingestion.orchestrator - INFO - ✓ Processed PDF (638 chars)
+2026-02-14 23:34:07,648 - ingestion.orchestrator - INFO - PHASE 4: Scraping Claritypay website...
+2026-02-14 23:34:07,686 - ingestion.web_scraper - INFO - Scraping https://claritypay.com
+2026-02-14 23:34:08,681 - ingestion.web_scraper - INFO - Scraped Claritypay: 21 propositions, 0 partners
+2026-02-14 23:34:08,684 - ingestion.orchestrator - INFO - ✓ Scraped Claritypay: 5 propositions, 0 partners
+2026-02-14 23:34:08,684 - ingestion.orchestrator - INFO - PHASE 5: Collating data from all sources...
+2026-02-14 23:34:08,684 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-14 23:34:08,685 - ingestion.collator - INFO - Collated 50 merchant records
+2026-02-14 23:34:08,685 - ingestion.orchestrator - INFO - ✓ Collated 50 merchant records
+2026-02-14 23:34:08,685 - ingestion.collator - INFO - Saving collated data to data/collated_merchants.csv
+2026-02-14 23:34:08,688 - ingestion.collator - INFO - Saved 50 records to data/collated_merchants.csv
+2026-02-14 23:34:08,688 - ingestion.orchestrator - INFO - ✓ Saved collated data to data/collated_merchants.csv
+2026-02-14 23:34:08,688 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 23:34:08,688 - ingestion.orchestrator - INFO - INGESTION PIPELINE COMPLETE
+2026-02-14 23:34:08,688 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 23:34:08,689 - ingestion.orchestrator - INFO - 
+INGESTION SUMMARY:
+2026-02-14 23:34:08,689 - ingestion.orchestrator - INFO -   merchants_loaded: 50
+2026-02-14 23:34:08,689 - ingestion.orchestrator - INFO -   api_responses_fetched: 9
+2026-02-14 23:34:08,689 - ingestion.orchestrator - INFO -   countries_enriched: 23
+2026-02-14 23:34:08,689 - ingestion.orchestrator - INFO -   companies_fetched: 0
+2026-02-14 23:34:08,689 - ingestion.orchestrator - INFO -   pdfs_processed: 1
+2026-02-14 23:34:08,689 - ingestion.orchestrator - INFO -   web_data_scraped: True
+2026-02-14 23:34:08,690 - __main__ - INFO - 
+[PHASE 2] Engineering features for risk model...
+2026-02-14 23:34:08,691 - __main__ - INFO -   Target distribution: {0: 36, 1: 14}
+2026-02-14 23:34:08,691 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-14 23:34:08,694 - features.feature_builder - INFO - Engineered 11 features: ['log_monthly_volume', 'log_transaction_count', 'avg_transaction_size', 'volume_transaction_ratio', 'volume_band', 'region_risk', 'company_status_risk', 'api_risk_score', 'has_country_data', 'has_company_data', 'is_uk_registered']
+2026-02-14 23:34:08,694 - __main__ - INFO - ✓ Engineered 11 features
+2026-02-14 23:34:08,694 - __main__ - INFO - 
+[PHASE 3] Training risk classification model...
+2026-02-14 23:34:08,694 - model.model_trainer - INFO - Training risk classification model
+2026-02-14 23:34:08,696 - model.model_trainer - INFO - Train set: 40, Test set: 10
+2026-02-14 23:34:08,696 - model.model_trainer - INFO - Target distribution - Train: {0: 29, 1: 11}
+2026-02-14 23:34:08,706 - model.model_trainer - INFO - Model AUC: 0.714
+2026-02-14 23:34:08,708 - model.model_trainer - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.75      0.86      0.80         7
+           1       0.50      0.33      0.40         3
+
+    accuracy                           0.70        10
+   macro avg       0.62      0.60      0.60        10
+weighted avg       0.68      0.70      0.68        10
+
+2026-02-14 23:34:08,708 - __main__ - INFO - ✓ Model trained (AUC: 0.714)
+2026-02-14 23:34:08,708 - __main__ - INFO -   Train size: 40, Test size: 10
+2026-02-14 23:34:08,708 - __main__ - INFO - 
+[PHASE 4] Generating risk predictions...
+2026-02-14 23:34:08,708 - __main__ - INFO - ✓ Generated predictions for 50 merchants
+2026-02-14 23:34:08,709 - __main__ - INFO - 
+[PHASE 5] Aggregating portfolio-level risk...
+2026-02-14 23:34:08,709 - model.portfolio - INFO - Aggregating portfolio-level risk metrics
+2026-02-14 23:34:08,709 - model.portfolio - INFO - Portfolio metrics: 19/50 high-risk merchants
+2026-02-14 23:34:08,709 - model.portfolio - INFO - Expected loss: 2217952.50, Risk distribution: {'low': 20, 'medium': 21, 'high': 9}
+2026-02-14 23:34:08,709 - __main__ - INFO - ✓ Portfolio summary:
+2026-02-14 23:34:08,709 - __main__ - INFO -   Total merchants: 50
+2026-02-14 23:34:08,709 - __main__ - INFO -   High-risk count: 19
+2026-02-14 23:34:08,709 - __main__ - INFO -   Expected loss: 2217952.50
+2026-02-14 23:34:08,709 - __main__ - INFO - 
+[PHASE 6] Generating LLM-powered underwriting report...
+2026-02-14 23:34:08,886 - reporting.llm_reporter - INFO - Generating underwriting report via LLM
+2026-02-14 23:34:08,886 - reporting.llm_reporter - ERROR - LLM report generation failed: 'OpenAI' object has no attribute 'messages'
+2026-02-14 23:34:08,886 - __main__ - INFO - ✓ Report generated successfully
+2026-02-14 23:34:08,886 - __main__ - INFO -   Saved to data/underwriting_report.txt
+2026-02-14 23:34:08,886 - model.model_trainer - INFO - Saving model to model/risk_model.pkl
+2026-02-14 23:34:08,887 - __main__ - INFO - ✓ Model saved to model/risk_model.pkl
+2026-02-14 23:34:08,887 - __main__ - INFO - ✓ Saved collated data with predictions
+2026-02-14 23:34:08,887 - __main__ - INFO - 
+================================================================================
+2026-02-14 23:34:08,887 - __main__ - INFO - PIPELINE EXECUTION COMPLETE
+2026-02-14 23:34:08,887 - __main__ - INFO - ================================================================================
+2026-02-14 23:34:42,741 - __main__ - INFO - 
+================================================================================
+2026-02-14 23:34:42,741 - __main__ - INFO - MERCHANT UNDERWRITING PIPELINE
+2026-02-14 23:34:42,741 - __main__ - INFO - ================================================================================
+2026-02-14 23:34:42,741 - __main__ - INFO - 
+[PHASE 1] Ingesting data from all sources...
+2026-02-14 23:34:42,741 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 23:34:42,741 - ingestion.orchestrator - INFO - STARTING INGESTION PIPELINE
+2026-02-14 23:34:42,741 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 23:34:42,741 - ingestion.orchestrator - INFO - PHASE 1: Loading merchant CSV...
+2026-02-14 23:34:42,741 - ingestion.csv_loader - INFO - Loading merchants from data/merchants.csv
+2026-02-14 23:34:42,745 - ingestion.csv_loader - INFO - Loaded 50 valid merchants, 0 errors
+2026-02-14 23:34:42,745 - ingestion.orchestrator - INFO - ✓ Loaded 50 merchants from CSV
+2026-02-14 23:34:42,745 - ingestion.orchestrator - INFO - PHASE 2: Fetching data from external APIs...
+2026-02-14 23:34:42,745 - ingestion.orchestrator - INFO - Calling Simulated Risk API...
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M010
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M011
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M012
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M013
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M014
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M015
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M016
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M017
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M018
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M019
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M020
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M021
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M022
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M023
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M024
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M025
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M026
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M027
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M028
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M029
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M030
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M031
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M032
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M033
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M034
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M035
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M036
+2026-02-14 23:34:42,745 - ingestion.orchestrator - WARNING - ⚠ No API data for M037
+2026-02-14 23:34:42,746 - ingestion.orchestrator - WARNING - ⚠ No API data for M038
+2026-02-14 23:34:42,746 - ingestion.orchestrator - WARNING - ⚠ No API data for M039
+2026-02-14 23:34:42,746 - ingestion.orchestrator - WARNING - ⚠ No API data for M040
+2026-02-14 23:34:42,746 - ingestion.orchestrator - WARNING - ⚠ No API data for M041
+2026-02-14 23:34:42,746 - ingestion.orchestrator - WARNING - ⚠ No API data for M042
+2026-02-14 23:34:42,746 - ingestion.orchestrator - WARNING - ⚠ No API data for M043
+2026-02-14 23:34:42,746 - ingestion.orchestrator - WARNING - ⚠ No API data for M044
+2026-02-14 23:34:42,746 - ingestion.orchestrator - WARNING - ⚠ No API data for M045
+2026-02-14 23:34:42,746 - ingestion.orchestrator - WARNING - ⚠ No API data for M046
+2026-02-14 23:34:42,746 - ingestion.orchestrator - WARNING - ⚠ No API data for M047
+2026-02-14 23:34:42,746 - ingestion.orchestrator - WARNING - ⚠ No API data for M048
+2026-02-14 23:34:42,746 - ingestion.orchestrator - WARNING - ⚠ No API data for M049
+2026-02-14 23:34:42,746 - ingestion.orchestrator - WARNING - ⚠ No API data for M050
+2026-02-14 23:34:42,746 - ingestion.orchestrator - INFO - ✓ Fetched API data for 9 merchants
+2026-02-14 23:34:42,746 - ingestion.orchestrator - INFO - Enriching with country data from REST Countries API...
+2026-02-14 23:34:55,138 - ingestion.orchestrator - INFO - ✓ Enriched 23 countries
+2026-02-14 23:34:55,139 - ingestion.orchestrator - INFO - ⊙ Companies House API key not configured; skipping UK company lookup
+2026-02-14 23:34:55,139 - ingestion.orchestrator - INFO - PHASE 3: Processing PDF asynchronously...
+2026-02-14 23:34:55,181 - ingestion.pdf_processor - INFO - Processing PDF: data/sample_merchant_summary.pdf
+2026-02-14 23:34:55,183 - ingestion.pdf_processor - INFO - Successfully extracted text from PDF (638 characters)
+2026-02-14 23:34:55,183 - ingestion.orchestrator - INFO - ✓ Processed PDF (638 chars)
+2026-02-14 23:34:55,183 - ingestion.orchestrator - INFO - PHASE 4: Scraping Claritypay website...
+2026-02-14 23:34:55,221 - ingestion.web_scraper - INFO - Scraping https://claritypay.com
+2026-02-14 23:34:58,059 - ingestion.web_scraper - INFO - Scraped Claritypay: 21 propositions, 0 partners
+2026-02-14 23:34:58,061 - ingestion.orchestrator - INFO - ✓ Scraped Claritypay: 5 propositions, 0 partners
+2026-02-14 23:34:58,061 - ingestion.orchestrator - INFO - PHASE 5: Collating data from all sources...
+2026-02-14 23:34:58,061 - ingestion.collator - INFO - Starting data collation from all sources
+2026-02-14 23:34:58,062 - ingestion.collator - INFO - Collated 50 merchant records
+2026-02-14 23:34:58,062 - ingestion.orchestrator - INFO - ✓ Collated 50 merchant records
+2026-02-14 23:34:58,062 - ingestion.collator - INFO - Saving collated data to data/collated_merchants.csv
+2026-02-14 23:34:58,066 - ingestion.collator - INFO - Saved 50 records to data/collated_merchants.csv
+2026-02-14 23:34:58,066 - ingestion.orchestrator - INFO - ✓ Saved collated data to data/collated_merchants.csv
+2026-02-14 23:34:58,066 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 23:34:58,066 - ingestion.orchestrator - INFO - INGESTION PIPELINE COMPLETE
+2026-02-14 23:34:58,066 - ingestion.orchestrator - INFO - ================================================================================
+2026-02-14 23:34:58,066 - ingestion.orchestrator - INFO - 
+INGESTION SUMMARY:
+2026-02-14 23:34:58,066 - ingestion.orchestrator - INFO -   merchants_loaded: 50
+2026-02-14 23:34:58,066 - ingestion.orchestrator - INFO -   api_responses_fetched: 9
+2026-02-14 23:34:58,066 - ingestion.orchestrator - INFO -   countries_enriched: 23
+2026-02-14 23:34:58,066 - ingestion.orchestrator - INFO -   companies_fetched: 0
+2026-02-14 23:34:58,066 - ingestion.orchestrator - INFO -   pdfs_processed: 1
+2026-02-14 23:34:58,066 - ingestion.orchestrator - INFO -   web_data_scraped: True
+2026-02-14 23:34:58,067 - __main__ - INFO - 
+[PHASE 2] Engineering features for risk model...
+2026-02-14 23:34:58,070 - __main__ - INFO -   Target distribution: {0: 36, 1: 14}
+2026-02-14 23:34:58,070 - features.feature_builder - INFO - Engineering features from merchant data
+2026-02-14 23:34:58,074 - features.feature_builder - INFO - Engineered 11 features: ['log_monthly_volume', 'log_transaction_count', 'avg_transaction_size', 'volume_transaction_ratio', 'volume_band', 'region_risk', 'company_status_risk', 'api_risk_score', 'has_country_data', 'has_company_data', 'is_uk_registered']
+2026-02-14 23:34:58,074 - __main__ - INFO - ✓ Engineered 11 features
+2026-02-14 23:34:58,074 - __main__ - INFO - 
+[PHASE 3] Training risk classification model...
+2026-02-14 23:34:58,074 - model.model_trainer - INFO - Training risk classification model
+2026-02-14 23:34:58,076 - model.model_trainer - INFO - Train set: 40, Test set: 10
+2026-02-14 23:34:58,076 - model.model_trainer - INFO - Target distribution - Train: {0: 29, 1: 11}
+2026-02-14 23:34:58,085 - model.model_trainer - INFO - Model AUC: 0.714
+2026-02-14 23:34:58,087 - model.model_trainer - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.75      0.86      0.80         7
+           1       0.50      0.33      0.40         3
+
+    accuracy                           0.70        10
+   macro avg       0.62      0.60      0.60        10
+weighted avg       0.68      0.70      0.68        10
+
+2026-02-14 23:34:58,087 - __main__ - INFO - ✓ Model trained (AUC: 0.714)
+2026-02-14 23:34:58,087 - __main__ - INFO -   Train size: 40, Test size: 10
+2026-02-14 23:34:58,087 - __main__ - INFO - 
+[PHASE 4] Generating risk predictions...
+2026-02-14 23:34:58,088 - __main__ - INFO - ✓ Generated predictions for 50 merchants
+2026-02-14 23:34:58,088 - __main__ - INFO - 
+[PHASE 5] Aggregating portfolio-level risk...
+2026-02-14 23:34:58,088 - model.portfolio - INFO - Aggregating portfolio-level risk metrics
+2026-02-14 23:34:58,088 - model.portfolio - INFO - Portfolio metrics: 19/50 high-risk merchants
+2026-02-14 23:34:58,088 - model.portfolio - INFO - Expected loss: 2217952.50, Risk distribution: {'low': 20, 'medium': 21, 'high': 9}
+2026-02-14 23:34:58,088 - __main__ - INFO - ✓ Portfolio summary:
+2026-02-14 23:34:58,088 - __main__ - INFO -   Total merchants: 50
+2026-02-14 23:34:58,088 - __main__ - INFO -   High-risk count: 19
+2026-02-14 23:34:58,088 - __main__ - INFO -   Expected loss: 2217952.50
+2026-02-14 23:34:58,088 - __main__ - INFO - 
+[PHASE 6] Generating LLM-powered underwriting report...
+2026-02-14 23:34:58,256 - reporting.llm_reporter - INFO - Generating underwriting report via LLM
+2026-02-14 23:35:22,036 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-14 23:35:22,044 - reporting.llm_reporter - INFO - Report generated successfully
+2026-02-14 23:35:22,044 - __main__ - INFO - ✓ Report generated successfully
+2026-02-14 23:35:22,045 - __main__ - INFO -   Saved to data/underwriting_report.txt
+2026-02-14 23:35:22,045 - model.model_trainer - INFO - Saving model to model/risk_model.pkl
+2026-02-14 23:35:22,046 - __main__ - INFO - ✓ Model saved to model/risk_model.pkl
+2026-02-14 23:35:22,049 - __main__ - INFO - ✓ Saved collated data with predictions
+2026-02-14 23:35:22,049 - __main__ - INFO - 
+================================================================================
+2026-02-14 23:35:22,049 - __main__ - INFO - PIPELINE EXECUTION COMPLETE
+2026-02-14 23:35:22,049 - __main__ - INFO - ================================================================================

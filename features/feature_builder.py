@@ -23,16 +23,24 @@ class FeatureBuilder:
             merchants: List of collated merchant dictionaries
             
         Returns:
-            DataFrame with engineered features
+            DataFrame with engineered features (numeric only, excluding merchant_id)
+            
+        Note:
+            Intentionally excludes dispute_count to prevent data leakage when
+            predicting high_dispute_risk (which is defined using dispute_count).
         """
         logger.info("Engineering features from merchant data")
         
         df = pd.DataFrame(merchants)
         features = pd.DataFrame()
-        features["merchant_id"] = df["merchant_id"]
         
-        # Dispute rate
-        features["dispute_rate"] = df["dispute_count"] / (df["transaction_count"] + 1)
+        # Volume-based features (legitimate predictors)
+        features["log_monthly_volume"] = np.log1p(df["monthly_volume"])
+        features["log_transaction_count"] = np.log1p(df["transaction_count"])
+        
+        # Ticket size and volatility
+        features["avg_transaction_size"] = df["monthly_volume"] / (df["transaction_count"] + 1)
+        features["volume_transaction_ratio"] = df["monthly_volume"] / (df["transaction_count"] + 1)
         
         # Volume band (categorical -> ordinal)
         features["volume_band"] = pd.cut(
@@ -41,23 +49,22 @@ class FeatureBuilder:
             labels=["low", "medium", "high", "very_high"],
         ).cat.codes
         
-        # Transaction frequency
-        features["avg_transaction_size"] = df["monthly_volume"] / (df["transaction_count"] + 1)
-        
-        # Geographic risk score (simple proxy based on region)
+        # Geographic risk score (from enriched data)
         features["region_risk"] = df["region"].map(self._get_region_risk).fillna(1.0)
         
-        # Company status risk
+        # Company status risk (from Companies House)
         features["company_status_risk"] = df["company_status"].map(self._get_company_status_risk).fillna(1.0)
         
-        # API-based risk score
+        # API-based risk score (internal assessment)
         features["api_risk_score"] = df["internal_risk_flag"].map(self._get_risk_score).fillna(1.0)
         
-        # Volume velocity (high 30d volume vs monthly volume suggests spike)
-        features["volume_velocity"] = (df["last_30d_volume"] / (df["monthly_volume"] + 1)).fillna(1.0)
+        # Enrichment flags (indicates data availability/quality)
+        features["has_country_data"] = df["country_code"].notna().astype(int)
+        features["has_company_data"] = df["company_status"].notna().astype(int)
+        features["is_uk_registered"] = (df["country"] == "United Kingdom").astype(int)
         
         # Store feature names for model
-        self.feature_names = [col for col in features.columns if col != "merchant_id"]
+        self.feature_names = [col for col in features.columns]
         
         logger.info(f"Engineered {len(self.feature_names)} features: {self.feature_names}")
         

@@ -69,8 +69,12 @@ class RiskModelTrainer:
         X_train_scaled = self.scaler.fit_transform(X_train)
         X_test_scaled = self.scaler.transform(X_test)
         
-        # Train model
-        self.model = LogisticRegression(random_state=self.random_seed, max_iter=1000)
+        # Train model with balanced class weights to handle imbalance
+        self.model = LogisticRegression(
+            random_state=self.random_seed,
+            max_iter=1000,
+            class_weight='balanced',  # Automatically weight inversely to class frequency
+        )
         self.model.fit(X_train_scaled, y_train)
         
         # Evaluate

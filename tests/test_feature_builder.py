@@ -8,29 +8,36 @@ from features.feature_builder import FeatureBuilder
 class TestFeatureBuilder:
     """Test feature engineering."""
 
-    def test_build_features(self, sample_merchant_data):
+    def test_build_features(self, sample_collated_data):
         """Test feature building from merchant data."""
         builder = FeatureBuilder()
-        features = builder.build_features(sample_merchant_data)
+        features = builder.build_features(sample_collated_data)
         
-        assert len(features) == len(sample_merchant_data)
-        assert "dispute_rate" in features.columns
+        assert len(features) == len(sample_collated_data)
+        # Verify key features present (new feature set without leakage)
+        assert "log_monthly_volume" in features.columns
+        assert "log_transaction_count" in features.columns
         assert "volume_band" in features.columns
         assert len(builder.feature_names) > 0
+        assert "dispute_rate" not in features.columns  # Prevent leakage!
 
-    def test_dispute_rate_calculation(self, sample_merchant_data):
-        """Test dispute rate is correctly calculated."""
+    def test_dispute_rate_calculation(self, sample_collated_data):
+        """Test that dispute rate is NOT in features (prevents data leakage)."""
         builder = FeatureBuilder()
-        features = builder.build_features(sample_merchant_data)
+        features = builder.build_features(sample_collated_data)
         
-        # First merchant: 2 disputes / 5000 transactions
-        expected_rate = 2 / 5000
-        assert abs(features.loc[0, "dispute_rate"] - expected_rate) < 0.0001
+        # Verify dispute-based features are excluded to prevent leakage
+        assert "dispute_rate" not in features.columns
+        assert "dispute_count" not in features.columns
+        
+        # But legitimate volume-based features should be present
+        assert "log_monthly_volume" in features.columns
+        assert "log_transaction_count" in features.columns
 
-    def test_volume_band_categorization(self, sample_merchant_data):
+    def test_volume_band_categorization(self, sample_collated_data):
         """Test volume band categorization."""
         builder = FeatureBuilder()
-        features = builder.build_features(sample_merchant_data)
+        features = builder.build_features(sample_collated_data)
         
         # Volume bands should be ordinal (0, 1, 2, 3)
         assert features["volume_band"].min() >= 0

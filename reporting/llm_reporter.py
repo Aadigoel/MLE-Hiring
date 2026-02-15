@@ -3,8 +3,22 @@
 import logging
 from typing import Dict, Optional
 import json
+import numpy as np
 
 logger = logging.getLogger(__name__)
+
+
+class NumpyEncoder(json.JSONEncoder):
+    """JSON encoder that handles numpy types."""
+    
+    def default(self, obj):
+        if isinstance(obj, np.integer):
+            return int(obj)
+        if isinstance(obj, np.floating):
+            return float(obj)
+        if isinstance(obj, np.ndarray):
+            return obj.tolist()
+        return super().default(obj)
 
 
 class LLMReporter:
@@ -24,10 +38,13 @@ class LLMReporter:
         
         if api_key:
             try:
+                import httpx
                 from openai import OpenAI
-                self.client = OpenAI(api_key=api_key)
-            except ImportError:
-                logger.warning("OpenAI package not installed; report generation will be limited")
+                # Create custom httpx client without proxies parameter
+                http_client = httpx.Client()
+                self.client = OpenAI(api_key=api_key, http_client=http_client)
+            except Exception as e:
+                logger.warning(f"Failed to initialize OpenAI client: {e}; report generation will use template")
 
     def generate_report(
         self,
@@ -66,7 +83,7 @@ Be precise, actionable, and professional."""
         
         user_prompt = f"""Generate an underwriting report based on this data:
 
-{json.dumps(context, indent=2)}
+{json.dumps(context, indent=2, cls=NumpyEncoder)}
 
 Focus on:
 - Key risk factors driving high-risk classifications
@@ -75,14 +92,16 @@ Focus on:
 - Recommended underwriting actions"""
         
         try:
-            response = self.client.messages.create(
+            response = self.client.chat.completions.create(
                 model=self.model,
                 max_tokens=2000,
-                system=system_prompt,
-                messages=[{"role": "user", "content": user_prompt}],
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_prompt}
+                ],
             )
             
-            report = response.content[0].text
+            report = response.choices[0].message.content
             logger.info("Report generated successfully")
             return report
             

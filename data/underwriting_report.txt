@@ -1,0 +1,26 @@
+Underwriting Report
+
+1. Portfolio Overview and Key Metrics
+
+Our portfolio currently encompasses 50 merchants, 19 of whom are classified as high-risk, making up 38% of the overall portfolio. The average risk probability stands at approximately 42%. Risk distribution shows 20 low-risk, 21 medium-risk, and 9 high-risk merchants. 
+
+2. Merchant Risk Profile by Risk Band
+
+The highest-risk merchants in the portfolio, as per their dispute rates, are MedSpa Wellness Co (0.24%), LaseyAway Beauty (0.25%), and PetCare Plus (0.12%). The high-risk classification is primarily driven by an elevated dispute rate. These high dispute rates indicate dissatisfaction amongst customers, which in turn poses a significant risk of chargebacks, thus elevating the overall risk profile. Also, their geographic distribution to be noted- two from the United States and one from the United Kingdom.
+
+3. Key Risk Factors and Red Flags
+
+An elevated dispute rate is a significant red flag across the highest-risk merchants. Another factor is the geographical concentration of high-risk merchants- a significant number of high-risk merchants are based in the United Kingdom and the United States. Furthermore, high monthly transaction volumes, as indicated by TechGear Electronics and Club Wyndham Travel, amplify the potential negative impact of these risks.
+
+Sector trends indicate a high concentration of risk within the Beauty, Wellness, and Pet Care sectors, which could point to industry-specific challenges and elevated customer dissatisfaction.
+
+4. Recommended Actions
+
+Given the risk profile, we recommend the following:
+
+- Monitor high-risk merchants closely, particularly those with high dispute rates. Also, engage with these merchants to understand and address the root cause of the high dispute rates.
+- Implement stricter underwriting criteria for merchants in high-risk countries, given the geographical trend observed.
+- Diversify the portfolio by identifying and onboarding merchants from different sectors and geographies to balance out the risk concentration.
+- Conduct a sector-specific risk analysis to understand the heightened risk in the Beauty, Wellness, and Pet Care sectors to mitigate industry-specific risks. 
+
+In conclusion, while the portfolio does contain high-risk elements, proper management strategies and diversified merchant onboarding can help manage and mitigate these risks efficiently.
